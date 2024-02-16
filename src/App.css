@@ -1,3 +1,6 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -8,11 +11,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #133855;
   padding: 20px;
   display: flex;
+  height: 30px;
   justify-content: space-between;
   align-items: center;
+  /*position: fixed;*/
 }
 
 .logo-container {
@@ -21,13 +26,13 @@
 }
 
 .logo1 {
-  width: 200px;  
-  height: auto;  
-  margin-right: 10px;  
+  height: 150px;
+  width: auto;
+  margin-right: 10px;
 }
 
 .logo2 {
-  width: 200px;  
+  width: 150px;
   height: auto;  
 }
 
@@ -39,15 +44,17 @@
 
 .navigation a {
   text-decoration: none;
-  color: white;  
-  font-size: 16px;  
-}
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  padding: 15px;
+  }
 
 
 
 .banner {
   position: relative;
-  margin-top: 1px;
 }
 
 .banner-content {
@@ -60,38 +67,46 @@
 
 
 .banner-image {
-  width: 100%;  
-  height: auto;  
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .matricule-se-button {
-  padding: 10px 20px;  
-  font-size: 18px;  
-  background-color: #4CAF50;  
+  padding: 20px;
+  font-size: 17px;
+  background-color: #133855;
   color: white;  
   border: none;
-  border-radius: 5px;
-  margin-top: 10px;  
+  width: 250px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 35px;
   cursor: pointer;
+  margin-top: 300px;
+  margin-left: 650px;
 }
 
 
 .course-section {
   text-align: center;
-  padding: 80px 20px; 
+  padding: 80px 80px;
 }
 
 .course-section h2 {
   font-size: 28px; 
-  margin-bottom: 80px; 
+  font-weight: bold;
+  margin-bottom: auto;
+align-self: center;
 }
 
 
 .corretor-section {
-  background-color: #333; /* Cor de fundo escura (azul escuro ou laranja escuro) */
+  background-color: #133855; /* Cor de fundo escura (azul escuro ou laranja escuro) */
   color: white; /* Cor do texto */
   text-align: center;
-  padding: 40px 20px; /* Ajuste o espaçamento conforme necessário */
+  padding: 60px 50px; /* Ajuste o espaçamento conforme necessário */
+  margin-top: -10px;
 }
 
 .corretor-section h2 {
@@ -100,18 +115,20 @@
 }
 
 .corretor-section p {
+  text-align: center;
   font-size: 18px; /* Tamanho da fonte do parágrafo */
-  margin-bottom: 10px; /* Espaçamento abaixo de cada parágrafo */
+  margin-bottom: 20px; /* Espaçamento abaixo de cada parágrafo */
 }
 
-.saiba-mais-button {
+.saiba-mais-button  {
   padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
   font-size: 18px; /* Ajuste o tamanho da fonte do botão conforme necessário */
-  background-color: #4CAF50; /* Cor de fundo do botão */
+  background-color: #d15519; /* Cor de fundo do botão */
   color: white; /* Cor do texto do botão */
   text-decoration: none; /* Remova a decoração de texto para que pareça um botão */
   border: none;
   border-radius: 5px;
+  margin: 150px !important;
   cursor: pointer;
 }
 
@@ -186,9 +203,10 @@
 /* Adicione isso ao seu arquivo App.css ou crie um novo arquivo CSS para o footer */
 
 .footer {
-  background-color: #3a393a;
+  background-color: #133855;
   padding: 20px;
   text-align: center;
+  color: white;
 }
 
 .payment-options,
@@ -206,10 +224,12 @@
 .navigation-links ul {
   list-style: none;
   padding: 0;
+
 }
 
 .navigation-links li {
   margin-bottom: 10px;
+
 }
 
 .rights {
@@ -223,5 +243,5 @@
 
 .rights a {
   text-decoration: none;
-  color: #007bff; /* Cor do link, ajuste conforme necessário */
+  color: #ffffff; /* Cor do link, ajuste conforme necessário */
 }

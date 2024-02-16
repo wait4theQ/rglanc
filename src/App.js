@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import './App.css';
 import logo1 from './img/Logo.png';
 import logo2 from './img/logo2.png';
-import banner from './img/test.jpg';
+import banner from './img/Features.png';
 import avatar1 from './img/avatar1.png';
 import avatar2 from './img/avatar2.png';
 import avatar3 from './img/avatar3.png';
@@ -35,19 +35,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"/>
         <div className="logo-container">
           <a href="/">
             <img
-              src={logo1}
-              alt="Logo 1"
-              className="logo1"
+                src={logo1}
+                alt="Logo 1"
+                className="logo1"
             />
           </a>
           <a href="/">
             <img
-              src={logo2}
-              alt="Logo 2"
-              className="logo2"
+                src={logo2}
+                alt="Logo 2"
+                className="logo2"
             />
           </a>
         </div>
@@ -61,9 +64,9 @@ function App() {
       </header>
       <div className="banner">
         <img
-          src={banner}
-          alt="Banner"
-          className="banner-image"
+            src={banner}
+            alt="Banner"
+            className="banner-image"
         />
         <div className="banner-content">
           <button className="matricule-se-button" onClick={() => window.location.href = '/pagina-de-matricula'}>
@@ -71,27 +74,32 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="course-section">
-        <h2>Conheça o curso CRECI TTI Uma parceria autorizada de vendas do Instituto Monitor. Matrículas abertas!</h2>
-        <a href="/pagina-de-matricula" className="matricule-se-button">
-          Matricule-se
-        </a>
-      </div>
+      {/*<div className="course-section">*/}
+      {/*  <h2>Conheça o curso CRECI TTI, uma parceria autorizada de vendas do Instituto Monitor. Matrículas abertas!</h2>*/}
+      {/*  <a href="/pagina-de-matricula" className="matricule-se-button">*/}
+      {/*    Matricule-se*/}
+      {/*  </a>*/}
+      {/*</div>*/}
       <div className="corretor-section">
-        <h2>CORRETOR CRECI TTI</h2>
+        <h2>Conheça o curso CORRETOR CRECI TTI, uma parceria autorizada de vendas do Instituto Monitor. <br/>Matrículas abertas!</h2>
+        {/*<a href="/pagina-de-matricula" className="matricule-se-button">*/}
+        {/*  Matricule-se*/}
+        {/*</a>*/}
+        {/*<h2>CORRETOR CRECI TTI</h2>*/}
+        <br/>
         <p>Duração de 6 meses</p>
         <p>Nível técnico com diploma reconhecido em todo Brasil</p>
         <p>Carteira de estágio para início imediato</p>
         <p>Aulas 100% online e provas presenciais no Polo de sua cidade</p>
+        <br/>
         <a href="/saiba-mais" className="saiba-mais-button">
           Saiba mais
         </a>
       </div>
-      <div className="testimonials-section" style={{ background: 'white' }}>
+      <div className="testimonials-section" style={{background: 'white'}}>
         <h2>Depoimentos de Clientes</h2>
         <Slider {...settings}>
-          {testimonialsData.map((testimonial) => (
-            <div key={testimonial.id} className="testimonial">
+          {testimonialsData.map((testimonial) => (<div key={testimonial.id} className="testimonial">
               <img src={testimonial.avatar} alt={`Cliente ${testimonial.id}`} className="client-image" />
               <p style={{ color: 'black' }}>{`"${testimonial.text}"`}</p>
             </div>
