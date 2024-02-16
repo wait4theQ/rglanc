@@ -15,11 +15,19 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 function App() {
+  // Nomes aleatórios para os clientes
+  const names = [
+    "João Silva",
+    "Maria Oliveira",
+    "Pedro Santos",
+    "Ana Pereira",
+  ];
+
   const testimonialsData = [
-    { id: 1, text: "Curso incrível! Recomendo a todos.", avatar: avatar1 },
-    { id: 2, text: "Ótimo suporte e conteúdo de alta qualidade.", avatar: avatar2 },
-    { id: 3, text: "Estou satisfeito com minha compra.", avatar: avatar3 },
-    { id: 4, text: "Excelente curso e equipe dedicada.", avatar: avatar4 },
+    { id: 1, text: '"Curso incrível! Recomendo a todos."', avatar: avatar1, name: names[0] },
+    { id: 2, text: '"Ótimo suporte e conteúdo de alta qualidade."', avatar: avatar2, name: names[1] },
+    { id: 3, text: '"Estou satisfeito com minha compra."', avatar: avatar3, name: names[2] },
+    { id: 4, text: '"Excelente curso e equipe dedicada."', avatar: avatar4, name: names[3] },
   ];
 
   const settings = {
@@ -93,7 +101,7 @@ function App() {
           {testimonialsData.map((testimonial) => (
             <div key={testimonial.id} className="testimonial">
               <img src={testimonial.avatar} alt={`Cliente ${testimonial.id}`} className="client-image" />
-              <p style={{ color: 'black' }}>{`"${testimonial.text}"`}</p>
+              <p style={{ color: 'black' }}>{`${testimonial.name} - ${testimonial.text}`}</p>
             </div>
           ))}
         </Slider>
@@ -115,15 +123,12 @@ function App() {
       <footer className="footer">
         <div className="payment-options">
           <h3>Formas de Pagamento</h3>
-          {/* Adicione os ícones ou imagens dos métodos de pagamento aceitos */}
           <img src={require('./img/visa.png')} alt="Visa" />
           <img src={require('./img/master.png')} alt="Mastercard" />
           <img src={require('./img/hiper.png')} alt="PayPal" />
-          {/* Adicione mais imagens conforme necessário */}
         </div>
         <div className="social-media">
           <h3>Redes Sociais</h3>
-          
           <a href="https://www.instagram.com/seu-instagram" target="_blank" rel="noopener noreferrer">
             <img src={require('./img/instagram.png')} alt="Instagram" />
           </a>
