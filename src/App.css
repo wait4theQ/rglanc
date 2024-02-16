@@ -12,10 +12,10 @@
 
 .App-header {
   background-color: #133855;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   height: 30px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   /*position: fixed;*/
 }
@@ -26,7 +26,7 @@
 }
 
 .logo1 {
-  height: 150px;
+  height: 170px;
   width: auto;
   margin-right: 10px;
 }
@@ -50,6 +50,19 @@
   font-weight: 500;
   padding: 15px;
   }
+/* Adicione isso ao seu arquivo App.css ou ao seu arquivo de estilos específico para o footer */
+
+.navigation-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 20px; /* Adapte o espaçamento conforme necessário */
+}
+
+/* Adiciona margem à direita para todos os links, exceto para o último */
+.navigation-links a:not(:last-child) {
+  margin-right: 20px;
+}
 
 
 
@@ -83,8 +96,8 @@
   font-weight: bold;
   border-radius: 35px;
   cursor: pointer;
-  margin-top: 300px;
-  margin-left: 650px;
+  margin-top: 450px;
+  margin-left: 750px;
 }
 
 
@@ -207,17 +220,20 @@ align-self: center;
   padding: 20px;
   text-align: center;
   color: white;
+  display:flex;
+  flex-direction: row;
 }
 
 .payment-options,
 .social-media,
 .navigation-links {
-  margin-bottom: 20px;
+  /*margin-bottom: 10px;*/
+  width:50%;
 }
 
 .payment-options img,
 .social-media img {
-  width: 40px; /* Ajuste conforme necessário */
+  width: 60px; /* Ajuste conforme necessário */
   margin-right: 10px;
 }
 
@@ -234,14 +250,25 @@ align-self: center;
 
 .rights {
   font-size: 12px;
-  margin-top: 20px;
+  background-color: #133855;
+  width:100%;
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 
 .rights p {
   margin: 5px 0;
+  color: #ffffff;
 }
+
 
 .rights a {
   text-decoration: none;
   color: #ffffff; /* Cor do link, ajuste conforme necessário */
+}
+.navigation a:hover {
+  color: #ffcc00; /* Cor desejada no hover */
+}
+.navigation-links a:hover {
+  color: #ffcc00; /* Cor desejada no hover */
 }
