@@ -12,10 +12,10 @@
 
 .App-header {
   background-color: #133855;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   height: 30px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   /*position: fixed;*/
 }
@@ -83,8 +83,8 @@
   font-weight: bold;
   border-radius: 35px;
   cursor: pointer;
-  margin-top: 300px;
-  margin-left: 650px;
+  margin-top: 450px;
+  margin-left: 750px;
 }
 
 
@@ -207,17 +207,20 @@ align-self: center;
   padding: 20px;
   text-align: center;
   color: white;
+  display:flex;
+  flex-direction: row;
 }
 
 .payment-options,
 .social-media,
 .navigation-links {
-  margin-bottom: 20px;
+  /*margin-bottom: 10px;*/
+  width:50%;
 }
 
 .payment-options img,
 .social-media img {
-  width: 40px; /* Ajuste conforme necessário */
+  width: 60px; /* Ajuste conforme necessário */
   margin-right: 10px;
 }
 
@@ -234,12 +237,17 @@ align-self: center;
 
 .rights {
   font-size: 12px;
-  margin-top: 20px;
+  background-color: #133855;
+  width:100%;
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 
 .rights p {
   margin: 5px 0;
+  color: #ffffff;
 }
+
 
 .rights a {
   text-decoration: none;
