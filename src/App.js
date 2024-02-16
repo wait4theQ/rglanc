@@ -1,5 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 import './App.css';
 import logo1 from './img/Logo.png';
 import logo2 from './img/logo2.png';
@@ -8,7 +10,6 @@ import avatar1 from './img/avatar1.png';
 import avatar2 from './img/avatar2.png';
 import avatar3 from './img/avatar3.png';
 import avatar4 from './img/avatar4.png';
-
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -28,9 +29,8 @@ function App() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000, 
+    autoplaySpeed: 5000,
   };
-  
 
   return (
     <div className="App">
@@ -98,6 +98,52 @@ function App() {
           ))}
         </Slider>
       </div>
+      <div className="map-section">
+        <h2>Localização</h2>
+        <MapContainer center={[-23.545698669709832, -46.623473980967006]} zoom={15} style={{ height: '300px', width: '80%', margin: '20px auto' }}>
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
+          <Marker position={[-23.545698669709832, -46.623473980967006]}>
+            <Popup>
+              <img src={require('./img/mark.png')} alt="Imagem do Marcador" style={{ maxWidth: '100%' }} />
+            </Popup>
+          </Marker>
+        </MapContainer>
+      </div>
+      <footer className="footer">
+        <div className="payment-options">
+          <h3>Formas de Pagamento</h3>
+          {/* Adicione os ícones ou imagens dos métodos de pagamento aceitos */}
+          <img src={require('./img/visa.png')} alt="Visa" />
+          <img src={require('./img/master.png')} alt="Mastercard" />
+          <img src={require('./img/hiper.png')} alt="PayPal" />
+          {/* Adicione mais imagens conforme necessário */}
+        </div>
+        <div className="social-media">
+          <h3>Redes Sociais</h3>
+          
+          <a href="https://www.instagram.com/seu-instagram" target="_blank" rel="noopener noreferrer">
+            <img src={require('./img/instagram.png')} alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/seu-facebook" target="_blank" rel="noopener noreferrer">
+            <img src={require('./img/instagram.png')} alt="Facebook" />
+          </a>
+        </div>
+        <div className="navigation-links">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/duvidas">Dúvidas</a></li>
+          </ul>
+        </div>
+        <div className="rights">
+          <p>RG Lançamentos - 2023 &copy; Todos os direitos reservados &#174;</p>
+          <p>Desenvolvido por: <a href="https://www.seusite.com" target="_blank" rel="noopener noreferrer">Seu Nome</a></p>
+        </div>
+      </footer>
     </div>
   );
 }

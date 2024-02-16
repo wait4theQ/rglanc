@@ -183,3 +183,45 @@
 
 /* Adicione esta seção ao seu arquivo App.css */
 
+/* Adicione isso ao seu arquivo App.css ou crie um novo arquivo CSS para o footer */
+
+.footer {
+  background-color: #3a393a;
+  padding: 20px;
+  text-align: center;
+}
+
+.payment-options,
+.social-media,
+.navigation-links {
+  margin-bottom: 20px;
+}
+
+.payment-options img,
+.social-media img {
+  width: 40px; /* Ajuste conforme necessário */
+  margin-right: 10px;
+}
+
+.navigation-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation-links li {
+  margin-bottom: 10px;
+}
+
+.rights {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.rights p {
+  margin: 5px 0;
+}
+
+.rights a {
+  text-decoration: none;
+  color: #007bff; /* Cor do link, ajuste conforme necessário */
+}
