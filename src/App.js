@@ -1,11 +1,13 @@
 import React from 'react';
 import Slider from 'react-slick';
-import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
+import {MapContainer, TileLayer, Marker, Popup, CircleMarker} from 'react-leaflet';
+import L from 'leaflet';
+
 import 'leaflet/dist/leaflet.css';
 import './App.css';
 import {FloatingWhatsApp} from 'react-floating-whatsapp'
 import Footer from './footer';
-import sobre from './img/avatar1.png';
+//import sobre from './img/avatar1.png';
 import rita from './img/rita.png';
 //import mark from './img/mark.png';
 import logo1 from './img/logo-dark.png';
@@ -23,11 +25,19 @@ import time from './img/time.png';
 import money from './img/money.png';
 import carreira from './img/carreira.png';
 
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+
 function App () {
-		// Nomes aleatórios para os clientes
+	const customIcon = new L.Icon({
+		iconUrl: require('./img/mark.png'),
+		iconSize: [32, 32], 
+		iconAnchor: [16, 32], 
+		popupAnchor: [0, -32], 
+	  });
+		
 		const names = ["Felipe Cordeiro", "Isabela Mendes", "Lucas Oliveira", "Camila Santos",];
 
 		const testimonialsData = [{id: 1, text: '"Curso incrível! Recomendo a todos."', avatar: avatar1, name: names[0]},
@@ -241,18 +251,15 @@ function App () {
 				</div>
 				<div className="map-section">
 
-						<MapContainer center={[-23.545698669709832, -46.623473980967006]} zoom={15}
-						              style={{height: '300px', width: '80%', margin: '20px auto'}}>
-								<TileLayer
-										url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-										attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-								/>
-								<Marker position={[-23.545698669709832, -46.623473980967006]}>
-										<Popup>
-												<img src={require('./img/mark.png')} alt="Imagem do Marcador" style={{maxWidth: '100%'}}/>
-										</Popup>
-								</Marker>
-						</MapContainer>
+				<MapContainer center={[-23.546251771783243, -46.62364273558242]} zoom={15} style={{ height: '300px', width: '80%', margin: '20px auto' }}>
+  <TileLayer
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  />
+  <Marker position={[-23.546251771783243, -46.62364273558242]} icon={customIcon}>
+   
+  </Marker>
+</MapContainer>
 				</div>
 				<FloatingWhatsApp
 						phoneNumber="(11) 997075-3810"
