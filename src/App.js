@@ -88,6 +88,7 @@ function App () {
 
 
 						</nav>
+						<div className="social-media" style={{marginLeft: '-350px'}}>
             <div className="instagram">
                 <a
                     href="https://www.instagram.com/ritaleitecorretora/"
@@ -106,6 +107,7 @@ function App () {
                     <img src={require('./img/fb.png')} alt="Facebook2"/>
                 </a>
             </div>
+						</div>
 				</header>
 				<div className="banner" id='home'>
 						<div className="banner-content">
