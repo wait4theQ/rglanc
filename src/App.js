@@ -86,18 +86,19 @@ function App () {
 										/>
 								</a>
 						</div>
-         
-            
+
+
 						<nav className="navigation">
-              
+
 								<ul>
 										<li><a href="/home">Home</a></li>
 										<li><a href="#sobre">Sobre</a></li>
 										<li><a href="#vantagens">Vantagens</a></li>
 								</ul>
-              
-                
+
+
 						</nav>
+						<div className="social-media" style={{marginLeft: '-350px'}}>
             <div className="instagram">
                 <a
                     href="https://www.instagram.com/ritaleitecorretora/"
@@ -116,6 +117,7 @@ function App () {
                     <img src={require('./img/fb.png')} alt="Facebook2"/>
                 </a>
             </div>
+						</div>
 				</header>
 				<div className="banner" id='home'>
 						<div className="banner-content">
@@ -198,46 +200,58 @@ function App () {
 								</div>
 						</div>
 				</div>
-        <div className="vantagens-curso" id='vantagens' style={{background: '#133855', padding: '20px 0'}}>
-						<div className="vantagens-img">
-							<img src={demanda} alt="vantagem 1"/>
-						</div>
-						<h3>ALTA DEMANDA NO MERCADO</h3>
+				<div className="vantagens-curso" id='vantagens' style={{background: '#133855', padding: '20px 0'}}>
+						<h1>VANTAGENS</h1>
+
 						<div className="vantagens-content">
-                <div className="vantagens-info">
-                  <p>Segundo o COEFI, para atender a demanda do mercado, o número de corretores deveria ser pelo menos o dobro.</p>	
-								</div>
-              <img src={time} alt='vantagem 2'/>
-              <h3>FLEXIBILIDADE DE HORÁRIO</h3>
-              <p>O corretor de imóveis tem uma agenda flexível com horários alternativos e com isso ganha tempo para dar atenção a outras atividades econômicas.</p>
-              <img src={money} alt='vantagem 3'/>
-              <h3>REMUNERAÇÃO ALTA</h3>
-              <p>A comissão do corretor pode chegar a 6% do valor do imóvel. se vender um imóvel de 360 mil reais, sua comissão será de R$ 21.600,00 ao atuar de forma autônoma e em parceria com uma imobiliária, a comissão pode ser de R$ 10.800,00.</p>
-              <img src={carreira} alt='vantagem 4'/>
-              <h3>UMA CARREIRA SÓLIDA</h3>
-              <p>O mercado imobiliário é cheio de oportunidades de crescimento. Se o profissional se dedicar ele consegue construir uma carreira de sucesso no segmento imobiliário.</p>
+								<img src={demanda} alt="vantagem 1"/>
+								<h3>ALTA DEMANDA NO MERCADO</h3>
+								<p>Segundo o COEFI, para atender a demanda do mercado, o número de corretores deveria ser pelo menos o
+										dobro.</p>
+						</div>
+						<div className="vantagens-content">
+								<img src={time} alt='vantagem 2'/>
+								<h3>FLEXIBILIDADE DE HORÁRIO</h3>
+								<p>O corretor de imóveis tem uma agenda flexível com horários alternativos e com isso ganha tempo para
+										dar atenção a outras atividades econômicas.</p>
+						</div>
+						<div className="vantagens-content">
+								<img src={money} alt='vantagem 3'/>
+								<h3>REMUNERAÇÃO ALTA</h3>
+								<p>A comissão do corretor pode chegar a 6% do valor do imóvel. se vender um imóvel de 360 mil reais, sua
+										comissão será de R$ 21.600,00 ao atuar de forma autônoma e em parceria com uma imobiliária, a
+										comissão pode ser de R$ 10.800,00.</p>
+						</div>
+						<div className="separator"></div>
+						<div className="vantagens-content">
+								<img src={carreira} alt='vantagem 4'/>
+								<h3>UMA CARREIRA SÓLIDA</h3>
+								<p>O mercado imobiliário é cheio de oportunidades de crescimento. Se o profissional se dedicar ele
+										consegue construir uma carreira de sucesso no segmento imobiliário.</p>
 						</div>
 				</div>
-        
-				<div className="sobre-o-curso-section" style={{background: '#f5f5f5', padding: '20px 0'}}>
+
+				<div className="sobre-o-curso-section" >
+						<div className="sobre-o-curso-box">
 						<div className="sobre-o-curso-image">
 								{/* Adicione o caminho da imagem que deseja exibir */}
-								<img src={requirements} alt="Imagem do Curso" style={{maxWidth: '100%', width: '200px'}}/>
+								<img src={requirements} alt="Imagem do Curso" />
 						</div>
-						<h3>Requisitos para Matrícula:</h3>
-						<div className="sobre-o-curso-content">
 
+						<div className="sobre-o-curso-content">
+								<h2>Requisitos para Matrícula:</h2>
 								<div className="sobre-o-curso-info">
 
 										<ul>
-												<p>Mínimo 18 anos</p>
-												<p>Cópia da Certidão de Nascimento ou Casamento</p>
-												<p>Cópia do RG e CPF</p>
-												<p>Foto</p>
-												<p>Cópia autenticada do Certificado de Conclusão do Ensino Médio (antigo 2º Grau) e Histórico
+												<p>✔️ Mínimo 18 anos</p>
+												<p>✔️ Cópia da Certidão de Nascimento ou Casamento</p>
+												<p>✔️ Cópia do RG e CPF</p>
+												<p>✔️ Foto</p>
+												<p>✔️ Cópia autenticada do Certificado de Conclusão do Ensino Médio (antigo 2º Grau) e Histórico
 														Escolar (com lauda ou visto-confere) ou comprovante de que está cursando o ensino médio</p>
 										</ul>
 								</div>
+						</div>
 						</div>
 				</div>
 				<div className="testimonials-section" style={{background: ''}}>

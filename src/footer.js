@@ -11,7 +11,7 @@ function Footer() {
                 <a href="#vantagens">Vantagens</a>
                 
             </div>
-     
+     <div className="social-media">
             <div className="instagram">
                 <a
                     href="https://www.instagram.com/ritaleitecorretora/"
@@ -30,6 +30,7 @@ function Footer() {
                     <img src={require('./img/fb.png')} alt="Facebook"/>
                 </a>
             </div>
+     </div>
             <div className="direitos">
                 Todos os direitos reservados &copy;RG Lançamentos 2024- CNPJ: 43.485.966/0001-79
             </div>
@@ -37,6 +38,7 @@ function Footer() {
             <div className="CreatedBy">
             Desenvolvido por:  <a href="/public" target="_blank"></a>
             </div>
+
         </footer>);
 }
 
