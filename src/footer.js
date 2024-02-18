@@ -6,9 +6,9 @@ function Footer() {
     return (<footer className="Footer">
         
             <div className="links">
-                <a href="/">Home</a>
-                <a href="/contato">Sobre</a>
-                <a href="/menu">Dúvidas</a>
+                <a href="/home">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#vantagens">Vantagens</a>
                 
             </div>
      
@@ -31,7 +31,7 @@ function Footer() {
                 </a>
             </div>
             <div className="direitos">
-                Todos os direitos reservados &copy;RG Lançamentos. 2024  RG Lançamentos - CNPJ: 43.485.966/0001-79
+                Todos os direitos reservados &copy;RG Lançamentos 2024- CNPJ: 43.485.966/0001-79
             </div>
             <div className="border"></div>
             <div className="CreatedBy">
