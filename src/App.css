@@ -6,11 +6,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  /*height: 40vmin;*/
   pointer-events: none;
 }
-
-
 
 .navigation {
   padding: 15px;
@@ -26,20 +24,41 @@
   align-items: center;
   position: fixed;
 }
-
-.logo-container {
+.logos-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.logo1 {
-  height: 100px;
-  width: auto;
-  margin-right: 10px;
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 35px;
+  margin: 20px;
+  margin-top: 40px;
+  justify-content: center;
 }
 
+.logo1 {
+  height: 90px;
+  width: auto;
+}
+.logo-container h1{
+  font-size: 20px;
+  color: #e3e2e2;
+  font-family:"Poppins", sans-serif ;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-decoration: none;
+  justify-content: center;
+  margin-left: -80px;
+  margin-bottom: 40px;
+  /*padding: 0;*/
+}
 .logo2 {
-  width: 100px;
+  width: 150px;
   height: auto;  
 }
 
@@ -63,28 +82,24 @@ background-color: rgba(226, 93, 26, 0.842);
   }
 
 .banner {
-height:500px;
+  /*height:700px;*/
   display: flex;
   background-color: #e3e2e2;
-
 }
 
 .banner-content {
   /*top: 50%;*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*text-align: center;*/
-  /*align-content: center;*/
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-content: center;
   /*padding: 50px;*/
 }
-
-
 .banner-image {
-  height: 80%;
-  margin-top: 100px;
+  max-height: 80%;
   object-fit: cover;
-  background-color: #e3e2e2;
-  /*border-top-left-radius: 50%;*/
+align-self: end;
+  margin-left:20px;
 }
 
 .matricule-se-button {
@@ -120,6 +135,7 @@ align-self: center;
 
 .sobre-o-curso-info {
   text-align: center;
+
 }
 .sobre-o-curso-info h3 {
   text-align: center;
@@ -133,39 +149,48 @@ align-self: center;
   /*background-color: #133855; !* Cor de fundo escura (azul escuro ou laranja escuro) *!*/
   color: #444444; /* Cor do texto */
   text-align: center;
-  /*padding: 60px 50px; !* Ajuste o espaçamento conforme necessário *!*/
-  /*margin-top: 10px;*/
+  max-height:500px;
+  margin-top: 50px;
+  text-align: center;
 }
+
 .corretor-section2 {
   /*background-color: #133855; !* Cor de fundo escura (azul escuro ou laranja escuro) *!*/
   color: #444444; /* Cor do texto */
   text-align: center;
-  
-  /*padding: 60px 50px; !* Ajuste o espaçamento conforme necessário *!*/
-  /*margin-top: 10px;*/
+  display: flex;
 }
 
 .corretor-section h2 {
   font-size: 20px; /* Tamanho da fonte do título */
   margin: 20px; /* Espaçamento abaixo do título */
   color: #133855;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .corretor-section p {
   text-align: start;
-  font-size: 18px; /* Tamanho da fonte do parágrafo */
-  margin-bottom: 0px; /* Espaçamento abaixo de cada parágrafo */
+  font-size: 15px; /* Tamanho da fonte do parágrafo */
+  margin: 20px; /* Espaçamento abaixo de cada parágrafo */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
 .corretor-section h2 p {
-  font-size: 38px; /* Tamanho da fonte do título */
+  font-size: 40px; /* Tamanho da fonte do título */
   margin: 10px; /* Espaçamento abaixo do título */
   color: #d15519;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
   text-align: center;
   text-shadow: 2px 2px 1px #133855;
 }
-
-
+.corretor-section2 {
+  margin:40px;
+  color: #817474;
+}
 
 .saiba-mais-button  {
   padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
@@ -179,39 +204,102 @@ align-self: center;
   cursor: pointer;
 }
 
+.aboutus-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px;
+  background-color: #d15519;
+  margin:20px;
+  border-radius:20px;
+  color: #e3e2e2;
+  box-shadow: 2px 2px 15px #082238;
+}
+.aboutus-section p{
+}
+.aboutus-section h2{
+  margin: 0px;
+  font-family: "Oswald", sans-serif;
+}
+
+.aboutus-section h4{
+  margin: 0px;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Oswald", sans-serif;
+}
+
+.aboutus-section-image {
+  height:200px;
+  width:200px;
+  object-fit: cover;
+  justify-content: center;
+  align-self: center;
+  border-radius: 200px;
+  border: 3px solid #133855;
+}
+
+.aboutus-section h4 {
+  margin: 0px;
+  font-weight: bold;
+  color: #082238;
+  font-family: "Oswald", sans-serif;
+}
+.aboutus-text {
+  margin-top:20px;
+}
+
 .syllabus-section-content {
   display:flex;
   flex-direction: row;
   background: #133855;
+  justify-content:center;
 }
 
 .syllabus-section-content h5 {
 font-size: 25px;
-  color: #f8f7f6;
+  color: rgb(209, 85, 25);
   text-shadow: 1px 1px 1px #000000;
   height: 50px;
+  font-family: "Oswald", sans-serif;
 }
 
 .syllabus-section-content ul {
   display:  flex;
   flex-direction: column;
   text-align: start;
-
-}
-.module {
-  border: 2px solid #d15519;
+  color: rgb(20, 18, 23);
+  border: 3px solid #d15519;
   box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.8);
   border-radius: 20px;
-  padding: 10px;
+  background: #e3e2e2;
+  min-height: 300px;
+  justify-content: center;
+
+}
+
+.syllabus-section h1 {
+  margin:0 !important;
+  padding:30px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-family: "Oswald", sans-serif;
+}
+
+.module {
   margin:20px;
   width:50%;
-  justify-content:space-around ;
+  height:50%;
+  justify-content:center;
+  max-width: 500px;
 }
+
 .syllabus-section-content li {
-  list-style:square;
+  list-style: outside;
   text-align: start;
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 .testimonials-section {
   background-color: #444;
