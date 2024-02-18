@@ -4,7 +4,6 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './App.css';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
-
 import Footer from './footer';
 import sobre from './img/avatar1.png';
 import rita from './img/rita.png';
@@ -190,10 +189,10 @@ Meu código de convênio é C1131C.
 </MapContainer>
     </div>
     <FloatingWhatsApp
-        phoneNumber="(11) 997075-3810" // Substitua pelo seu número de telefone
-        accountName="Ana Rita corretora de lançamentos" // Substitua pelo seu nome
-        avatar={rita} // Substitua pelo caminho para o avatar (opcional)
-        chatMessage="Olá, como posso ajudar?" // Substitua pela mensagem inicial (opcional)
+        phoneNumber="(11) 997075-3810" 
+        accountName="Ana Rita corretora de lançamentos" 
+        avatar={rita} 
+        chatMessage="Olá, como posso ajudar?" 
         statusMessage="RG Lançamentos"
         avatarStyle={{ width: '50px', height: '50px' }}
       />
