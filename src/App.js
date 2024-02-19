@@ -98,26 +98,7 @@ function App () {
 
 
 						</nav>
-						<div className="social-media" style={{marginLeft: '-350px'}}>
-            <div className="instagram">
-                <a
-                    href="https://www.instagram.com/ritaleitecorretora/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img src={require('./img/instagram.png')} alt="Instagram2"/>
-                </a>
-                </div>
-                <div className="facebook">
-                <a
-                    href="https://www.facebook.com/RGlancamentosimobiliarios?mibextid=ZbWKwL"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img src={require('./img/fb.png')} alt="Facebook2"/>
-                </a>
-            </div>
-						</div>
+						
 				</header>
 				<div className="banner" id='home'>
 						<div className="banner-content">
@@ -170,6 +151,26 @@ function App () {
 												Instituto Monitor para você.
 										</p>
 								</div>
+								<div className="social-media" style={{marginLeft: '-1px'}}>
+            <div className="instagram">
+                <a
+                    href="https://www.instagram.com/ritaleitecorretora/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={require('./img/instagram.png')} alt="Instagram2"/>
+                </a>
+                </div>
+                <div className="facebook">
+                <a
+                    href="https://www.facebook.com/RGlancamentosimobiliarios?mibextid=ZbWKwL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={require('./img/fb.png')} alt="Facebook2"/>
+                </a>
+            </div>
+						</div>
 								</div>
 						</div>
 
