@@ -91,7 +91,7 @@ function App () {
 						<nav className="navigation">
 
 								<ul>
-										<li><a href="/home">Home</a></li>
+										<li><a href="#home">Home</a></li>
 										<li><a href="#sobre">Sobre</a></li>
 										<li><a href="#vantagens">Vantagens</a></li>
 								</ul>
