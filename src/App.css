@@ -172,7 +172,7 @@ align-self: center;
 }
 
 .corretor-section h2 {
-  font-size: 20px; /* Tamanho da fonte do título */
+  font-size: 25px; /* Tamanho da fonte do título */
   margin: 20px; /* Espaçamento abaixo do título */
   color: #133855;
   font-family: "Poppins", sans-serif;
@@ -225,15 +225,17 @@ align-self: center;
   box-shadow: 2px 2px 15px #082238;
 }
 .aboutus-section p{
+  font-size: 17px;
 }
 .aboutus-section h2{
   margin: 0px;
   font-family: "Oswald", sans-serif;
+  font-size: 25px;
 }
 
 .aboutus-section h4{
   margin: 0px;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: normal;
   font-family: "Oswald", sans-serif;
 }
