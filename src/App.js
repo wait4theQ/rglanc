@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 //import { MapContainer, TileLayer,  LayerGroup, Marker, Popup, } from 'react-leaflet';
 //import L from 'leaflet';
@@ -8,7 +8,7 @@ import './App.css';
 import {FloatingWhatsApp} from 'react-floating-whatsapp';
 import Footer from './footer';
 //import sobre from './img/avatar1.png';
-import rita from './img/rita.png';
+import rita from './img/picture.jpeg';
 //import mark from './img/mark.png';
 import logo1 from './img/logo-dark.png';
 import logo2 from './img/logo2.png';
@@ -32,8 +32,8 @@ import 'slick-carousel/slick/slick-theme.css';
 
 
 function App () {
-	
-		
+
+
 		const names = ["Felipe Cordeiro", "Isabela Mendes", "Lucas Oliveira", "Camila Santos",];
 
 		const testimonialsData = [{id: 1, text: '"Curso incrível! Recomendo a todos."', avatar: avatar1, name: names[0]},
@@ -65,14 +65,14 @@ function App () {
 								rel="stylesheet"/>
 						<div className="logos-container">
 								<div className="logo-container">
-								<a href="/">
-										<img
-												src={logo1}
-												alt="Logo 1"
-												className="logo1"
-										/>
-								</a>
-								<h1>RG Lançamentos</h1>
+										<a href="/">
+												<img
+														src={logo1}
+														alt="Logo 1"
+														className="logo1"
+												/>
+										</a>
+										<h1>RG Lançamentos</h1>
 								</div>
 								<a href="https://www.institutomonitor.com.br">
 										<img
@@ -94,15 +94,15 @@ function App () {
 
 
 						</nav>
-						
+
 				</header>
 				<div className="banner" id='home'>
 						<div className="banner-content">
 								<img
-								src={banner}
-								alt="Banner"
-								className="banner-image"
-						    />
+										src={banner}
+										alt="Banner"
+										className="banner-image"
+								/>
 								<div className="corretor-section">
 										<h2>Conheça o curso:
 												<p className="creci-tti">
@@ -139,48 +139,48 @@ function App () {
 										</div>
 								</div>
 								<div className="aboutus-section">
-										
-										<div className="aboutus-text">
-										<h1>De: R$ 1.826,00</h1>
-										<h1>Por: R$ 600,00</h1>
-										<p>Oferta exclusiva RG Lançamentos</p>
 
-										<h2> Pague apenas:</h2>
+										<div className="aboutus-text">
+												<h1>De: R$ 1.826,00</h1>
+												<h1>Por: R$ 600,00</h1>
+												<p>Oferta exclusiva RG Lançamentos</p>
+
+												<h2> Pague apenas:</h2>
 												<h4>R$ 100,00/mês</h4>
 												<ul>Mais opções de parcelamento</ul>
-										<p>Modalidade:</p>
-										<p>EAD (Online)</p>
-										<p>Inclui</p>
-                                        <p>Certificado de Qualificação Profissional</p>
-										<p>Diploma de Nível Técnico</p>
-										<p>Direito ao CRECI</p>
-										<button className="matricule-se-button-placa"
-										        onClick={() => window.location.href = 'https://www.alboompay.com/RitaLeite/button/65306fc07b503d0026e77449'}>
-												Inscreva-se!
-										</button>
-								</div>
-								
-						
+												<p>Modalidade:</p>
+												<p>EAD (Online)</p>
+												<p>Inclui</p>
+												<p>Certificado de Qualificação Profissional</p>
+												<p>Diploma de Nível Técnico</p>
+												<p>Direito ao CRECI</p>
+												<button className="matricule-se-button-placa"
+												        onClick={() => window.location.href = 'https://www.alboompay.com/RitaLeite/button/65306fc07b503d0026e77449'}>
+														Inscreva-se!
+												</button>
+										</div>
+
+
 								</div>
 						</div>
 
 				</div>
-				<div className="syllabus-section"  style={{background: '#133855', color: '#e3e2e2'}}>
-        <h1>PROGRAMA DO CURSO</h1>
-        <div className="syllabus-section-content">
-          <div className="module 1">
-            <h5>Módulo I - Básico</h5>
-            <ul>
-              <li> Comunicação Empresarial</li>
-              <li> Fundamentos de Gestão</li>
-              <li> Legislação e Ética</li>
-              <li> Informática Aplicada</li>
+				<div className="syllabus-section" >
+						<h1>PROGRAMA DO CURSO</h1>
+						<div className="syllabus-section-content">
+								<div className="module 1">
+										<h5>Módulo I - Básico</h5>
+										<ul>
+												<li> Comunicação Empresarial</li>
+												<li> Fundamentos de Gestão</li>
+												<li> Legislação e Ética</li>
+												<li> Informática Aplicada</li>
 												<li> Comportamento Organizacional</li>
 										</ul>
 								</div>
 
 								<div className="module 2">
-										<h5>Módulo II - Qualificação Profissional de Assistente em Transações Imobiliárias</h5>
+										<h5>Módulo II - Qualificação Profissional </h5>
 										<ul>
 												<li> Matemática Financeira</li>
 												<li> Desenho Arquitetônico e Noções de Construção Civil</li>
@@ -189,18 +189,19 @@ function App () {
 												<li> Operações Imobiliárias</li>
 										</ul>
 								</div>
-								<div className="module 3">
-            <h5>Requisitos</h5>
-            <ul>
-              <li> Carga horária: 800 horas</li>
-              <li> Estágio Profissional: 150 horas</li>
-              <li> Carga horária total: 950 horas</li>
-              <li> Total de avaliações: 10 Provas Presenciais</li>
-												
+								<div className="course-numbers">
+										<h5>Mais Informações</h5>
+										<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+										<ul>
+												<li> <b>Carga horária:</b> 800 horas</li>
+												<li> <b>Estágio Profissional:</b> 150 horas</li>
+												<li> <b>Carga horária total:</b> 950 horas</li>
+												<li> <b>Total de avaliações:</b> 10 Provas Presenciais</li>
+
 										</ul>
 								</div>
 						</div>
-						
+
 
 				</div>
 				<div className="vantagens-curso" id='vantagens' style={{background: '#133855', padding: '20px 0'}}>
@@ -234,61 +235,63 @@ function App () {
 						</div>
 				</div>
 
-				<div className="sobre-o-curso-section" >
+				<div className="sobre-o-curso-section">
 						<div className="sobre-o-curso-box">
-						<div className="sobre-o-curso-image">
-								{/* Adicione o caminho da imagem que deseja exibir */}
-								<img src={requirements} alt="Imagem do Curso" />
-						</div>
+								<div className="sobre-o-curso-image">
+										{/* Adicione o caminho da imagem que deseja exibir */}
+										<img src={requirements} alt="Imagem do Curso"/>
+								</div>
 
-						<div className="sobre-o-curso-content">
-								<h2>Requisitos para Matrícula:</h2>
-								<div className="sobre-o-curso-info">
+								<div className="sobre-o-curso-content">
+										<h2>Requisitos:</h2>
+										<div className="sobre-o-curso-info">
 
-										<ul>
-												<p>✔️ Mínimo 18 anos</p>
-												<p>✔️ Cópia da Certidão de Nascimento ou Casamento</p>
-												<p>✔️ Cópia do RG e CPF</p>
-												<p>✔️ Foto</p>
-												<p>✔️ Cópia autenticada do Certificado de Conclusão do Ensino Médio (antigo 2º Grau) e Histórico
-														Escolar (com lauda ou visto-confere) ou comprovante de que está cursando o ensino médio</p>
-										</ul>
+												<ul>
+														<p>✔️ Mínimo 18 anos</p>
+														<p>✔️ Cópia da Certidão de Nascimento ou Casamento</p>
+														<p>✔️ Cópia do RG e CPF</p>
+														<p>✔️ Foto</p>
+														<p>✔️ Cópia autenticada do Certificado de Conclusão do Ensino Médio (antigo 2º Grau) e
+																Histórico
+																Escolar (com lauda ou visto-confere) ou comprovante de que está cursando o ensino
+																médio</p>
+												</ul>
+										</div>
 								</div>
 						</div>
-						
+						<div className='quem-sou-section' id='sobre'>
+								<div className='quem-sou-box'>
+										<div className='quem-sou-image'>
+												<img src={rita} alt='rita png'/>
+										</div>
+										<div className='quem-sou-content'>
+												<h2>Quem sou?</h2>
+												<p>Rita Leite</p>
+										</div>
+										<div className='quem-sou-info'>
+												<p>Especialista em lançamentos imobiliários, tenho 13 anos no mercado e sou Proprietária da RG
+														Lançamentos.</p>
+										</div>
+										<div className='chamada-instagram'>
+												<p>Explore o fascinante mundo dos imóveis e aprimore sua carreira! 🏡✨ Siga-nos no Instagram
+														para
+														dicas, oportunidades e cursos exclusivos</p>
+										</div>
+										<div className="social-media">
+												<div className="instagram-sobre">
+														<a
+																href="https://www.instagram.com/ritaleitecorretora/"
+																target="_blank"
+																rel="noopener noreferrer"
+														>
+																<img src={require('./img/instagram.png')} alt="Instagram"/>ritaleitecorretora
+														</a>
+												</div>
+										</div>
+								</div>
+						</div>
 				</div>
-				<div className='quem-sou-section' id='sobre'>
-							<div className='quem-sou-box'>
-								<div className='quem-sou-image'>
-									<img src={rita2} alt='rita png' />
-								</div>
-							<div className='quem-sou-content' >
-								<h2>Quem sou?</h2>
-								<p>Rita Leite</p>
-							</div>
-							<div className='quem-sou-info'>
-								<p>Especialista em lançamentos imobiliários</p>
-								<p>13 anos no mercado</p>
-								<p>Prorpietária da RG Lançamentos</p>
-							</div>
-							<div className='chamada-instagram'>
-								<p>Explore o fascinante mundo dos imóveis e aprimore sua carreira! 🏡✨ Siga-nos no Instagram para dicas, oportunidades e cursos exclusivos</p>
-							</div>
-							<div className="social-media">
-            <div className="instagram-sobre">
-                <a
-                    href="https://www.instagram.com/ritaleitecorretora/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img src={require('./img/instagram.png')} alt="Instagram"/>
-                </a>
-            </div>
-			</div>
-							</div>
-						</div>
-						</div>
-				<div className="testimonials-section" style={{background: ''}}>
+				<div className="testimonials-section">
 						<h2>Depoimentos de Clientes</h2>
 						<Slider {...settings}>
 								{testimonialsData.map((testimonial) => (<div key={testimonial.id} className="testimonial">
@@ -297,11 +300,10 @@ function App () {
 								</div>))}
 						</Slider>
 				</div>
-				
 				<div className="map-sec">
 
-<Map></Map>
-      </div>
+						<Map></Map>
+				</div>
 				<FloatingWhatsApp
 						phoneNumber="(11) 997075-3810"
 						accountName="Ana Rita corretora de lançamentos"
