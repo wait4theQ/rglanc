@@ -1,11 +1,11 @@
-import React from 'react';
+import React  from 'react';
 import Slider from 'react-slick';
-import {MapContainer, TileLayer, Marker, Popup, CircleMarker} from 'react-leaflet';
-import L from 'leaflet';
-
+//import { MapContainer, TileLayer,  LayerGroup, Marker, Popup, } from 'react-leaflet';
+//import L from 'leaflet';
+import rita2 from './img/cutout.png'
 import 'leaflet/dist/leaflet.css';
 import './App.css';
-import {FloatingWhatsApp} from 'react-floating-whatsapp'
+import {FloatingWhatsApp} from 'react-floating-whatsapp';
 import Footer from './footer';
 //import sobre from './img/avatar1.png';
 import rita from './img/rita.png';
@@ -17,13 +17,14 @@ import avatar1 from './img/avatar1.png';
 import avatar2 from './img/avatar2.png';
 import avatar3 from './img/avatar3.png';
 import avatar4 from './img/avatar4.png';
-import image from './img/picture.jpeg';
+//import image from './img/picture.jpeg';
 //import cutout from './img/cutout.png';
 import requirements from './img/requirements.png';
 import demanda from './img/demanda.png';
 import time from './img/time.png';
 import money from './img/money.png';
 import carreira from './img/carreira.png';
+import Map from './map.js';
 
 
 import 'slick-carousel/slick/slick.css';
@@ -31,12 +32,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 
 function App () {
-	const customIcon = new L.Icon({
-		iconUrl: require('./img/mark.png'),
-		iconSize: [32, 32], 
-		iconAnchor: [16, 32], 
-		popupAnchor: [0, -32], 
-	  });
+	
 		
 		const names = ["Felipe Cordeiro", "Isabela Mendes", "Lucas Oliveira", "Camila Santos",];
 
@@ -131,7 +127,7 @@ function App () {
 										{/*</a>*/}
 										<button className="matricule-se-button"
 										        onClick={() => window.location.href = 'https://www.alboompay.com/RitaLeite/button/65306fc07b503d0026e77449'}>
-												Matricule-se
+												Inscreva-se
 										</button>
 										<div className='corretor-section2'>
 												<p>Somos uma empresa parceira/autorizada de vendas do
@@ -143,36 +139,28 @@ function App () {
 										</div>
 								</div>
 								<div className="aboutus-section">
-										<img src={image} alt="About Us" className="aboutus-section-image"/>
+										
 										<div className="aboutus-text">
-										<h2> Quem sou eu?</h2>
-												<h4>Rita Leite</h4>
-										<p>Eu sou especialista em lançamentos imobiliários, estou trazendo essa oportunidade em parceria com
-												Instituto Monitor para você.
-										</p>
-										<p>10 anos no mercado</p>
-                                        <p>+ de 250 unidades vendidas</p>
+										<h1>De: R$ 1.826,00</h1>
+										<h1>Por: R$ 600,00</h1>
+										<p>Oferta exclusiva RG Lançamentos</p>
+
+										<h2> Pague apenas:</h2>
+												<h4>R$ 100,00/mês</h4>
+												<ul>Mais opções de parcelamento</ul>
+										<p>Modalidade:</p>
+										<p>EAD (Online)</p>
+										<p>Inclui</p>
+                                        <p>Certificado de Qualificação Profissional</p>
+										<p>Diploma de Nível Técnico</p>
+										<p>Direito ao CRECI</p>
+										<button className="matricule-se-button-placa"
+										        onClick={() => window.location.href = 'https://www.alboompay.com/RitaLeite/button/65306fc07b503d0026e77449'}>
+												Inscreva-se!
+										</button>
 								</div>
-								<div className="social-media" style={{marginLeft: '-1px'}}>
-            <div className="instagram">
-                <a
-                    href="https://www.instagram.com/ritaleitecorretora/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img src={require('./img/instagram.png')} alt="Instagram2"/>
-                </a>
-                </div>
-                <div className="facebook">
-                <a
-                    href="https://www.facebook.com/RGlancamentosimobiliarios?mibextid=ZbWKwL"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img src={require('./img/fb.png')} alt="Facebook2"/>
-                </a>
-            </div>
-						</div>
+								
+						
 								</div>
 						</div>
 
@@ -201,7 +189,19 @@ function App () {
 												<li> Operações Imobiliárias</li>
 										</ul>
 								</div>
+								<div className="module 3">
+            <h5>Requisitos</h5>
+            <ul>
+              <li> Carga horária: 800 horas</li>
+              <li> Estágio Profissional: 150 horas</li>
+              <li> Carga horária total: 950 horas</li>
+              <li> Total de avaliações: 10 Provas Presenciais</li>
+												
+										</ul>
+								</div>
 						</div>
+						
+
 				</div>
 				<div className="vantagens-curso" id='vantagens' style={{background: '#133855', padding: '20px 0'}}>
 						<h1>VANTAGENS</h1>
@@ -255,8 +255,39 @@ function App () {
 										</ul>
 								</div>
 						</div>
-						</div>
+						
 				</div>
+				<div className='quem-sou-section'>
+							<div className='quem-sou-box'>
+								<div className='quem-sou-image'>
+									<img src={rita2} alt='rita png' />
+								</div>
+							<div className='quem-sou-content'>
+								<h2>Quem sou?</h2>
+								<p>Rita Leite</p>
+							</div>
+							<div className='quem-sou-info'>
+								<p>Especialista em lançamentos imobiliários</p>
+								<p>13 anos no mercado</p>
+								<p>Prorpietária da RG Lançamentos</p>
+							</div>
+							<div className='chamada-instagram'>
+								<p>Explore o fascinante mundo dos imóveis e aprimore sua carreira! 🏡✨ Siga-nos no Instagram para dicas, oportunidades e cursos exclusivos</p>
+							</div>
+							<div className="social-media">
+            <div className="instagram-sobre">
+                <a
+                    href="https://www.instagram.com/ritaleitecorretora/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={require('./img/instagram.png')} alt="Instagram"/>
+                </a>
+            </div>
+			</div>
+							</div>
+						</div>
+						</div>
 				<div className="testimonials-section" style={{background: ''}}>
 						<h2>Depoimentos de Clientes</h2>
 						<Slider {...settings}>
@@ -266,18 +297,11 @@ function App () {
 								</div>))}
 						</Slider>
 				</div>
-				<div className="map-section">
+				
+				<div className="map-sec">
 
-				<MapContainer center={[-23.546251771783243, -46.62364273558242]} zoom={15} style={{ height: '300px', width: '80%', margin: '20px auto' }}>
-  <TileLayer
-    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  />
-  <Marker position={[-23.546251771783243, -46.62364273558242]} icon={customIcon}>
-   
-  </Marker>
-</MapContainer>
-				</div>
+<Map></Map>
+      </div>
 				<FloatingWhatsApp
 						phoneNumber="(11) 997075-3810"
 						accountName="Ana Rita corretora de lançamentos"
