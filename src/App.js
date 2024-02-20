@@ -150,6 +150,8 @@ function App () {
 										<p>Eu sou especialista em lançamentos imobiliários, estou trazendo essa oportunidade em parceria com
 												Instituto Monitor para você.
 										</p>
+										<p>10 anos no mercado</p>
+                                        <p>+ de 250 unidades vendidas</p>
 								</div>
 								<div className="social-media" style={{marginLeft: '-1px'}}>
             <div className="instagram">
