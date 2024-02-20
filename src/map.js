@@ -39,7 +39,7 @@ function Map() {
 
   return (
     <div className="map-section">
-      <label>Escolha a localização:</label>
+      <label>Unidades: </label>
       <select onChange={handleLocationChange}>
         {locations.map((location, index) => (
           <option key={index} value={index}>
@@ -50,7 +50,7 @@ function Map() {
       <MapContainer
         key={selectedLocation.coordinates.join(",")} // Adicione esta linha
         center={selectedLocation.coordinates}
-        zoom={15}
+        zoom={17}
         style={{ height: '300px', width: '80%', margin: '20px auto' }}
       >
         <TileLayer

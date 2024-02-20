@@ -257,12 +257,12 @@ function App () {
 						</div>
 						
 				</div>
-				<div className='quem-sou-section'>
+				<div className='quem-sou-section' id='sobre'>
 							<div className='quem-sou-box'>
 								<div className='quem-sou-image'>
 									<img src={rita2} alt='rita png' />
 								</div>
-							<div className='quem-sou-content' id='sobre'>
+							<div className='quem-sou-content' >
 								<h2>Quem sou?</h2>
 								<p>Rita Leite</p>
 							</div>
