@@ -165,7 +165,7 @@ function App () {
 						</div>
 
 				</div>
-				<div className="syllabus-section" id='sobre' style={{background: '#133855', color: '#e3e2e2'}}>
+				<div className="syllabus-section"  style={{background: '#133855', color: '#e3e2e2'}}>
         <h1>PROGRAMA DO CURSO</h1>
         <div className="syllabus-section-content">
           <div className="module 1">
@@ -262,7 +262,7 @@ function App () {
 								<div className='quem-sou-image'>
 									<img src={rita2} alt='rita png' />
 								</div>
-							<div className='quem-sou-content'>
+							<div className='quem-sou-content' id='sobre'>
 								<h2>Quem sou?</h2>
 								<p>Rita Leite</p>
 							</div>
