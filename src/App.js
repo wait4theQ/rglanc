@@ -12,7 +12,7 @@ import rita from './img/picture.jpeg';
 //import mark from './img/mark.png';
 import logo1 from './img/logo-dark.png';
 import logo2 from './img/logo2.png';
-import banner from './img/terno.png';
+import banner from './img/banner.png';
 import avatar1 from './img/avatar1.png';
 import avatar2 from './img/avatar2.png';
 import avatar3 from './img/avatar3.png';
@@ -53,6 +53,7 @@ function App () {
 		};
 
 		return (<div className="App">
+
 				<header className="App-header">
 						<link
 								href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
@@ -98,6 +99,30 @@ function App () {
 						</nav>
 
 				</header>
+				<div className="aboutus-section">
+						<div className="aboutus-text">
+								<h1>De: R$ 1.826,00</h1>
+								<h7>Por: R$ 600,00</h7>
+								<p>Em até 6x sem juros!</p>
+
+								<h2> Pague apenas:</h2>
+								<h4>R$ 100,00/mês*</h4>
+
+								{/*<h5>Modalidade:</h5>*/}
+								{/*<p>EAD (Online)</p>*/}
+								<h6>Inclui:
+										<p>Certificado de Qualificação Profissional</p>
+										<p>Diploma de Nível Técnico</p>
+										<p>Direito ao CRECI</p>
+								</h6>
+								<button className="matricule-se-button-placa"
+								        onClick={() => window.location.href = 'https://www.alboompay.com/RitaLeite/button/65306fc07b503d0026e77449'}>
+										Inscreva-se!
+								</button>
+								<h3>*(Oferta exclusiva RG Lançamentos)</h3>
+						</div>
+
+				</div>
 				<div className="banner" id='home'>
 						<div className="banner-content">
 								<img
@@ -140,34 +165,9 @@ function App () {
 												</p>
 										</div>
 								</div>
-								<div className="aboutus-section">
-
-										<div className="aboutus-text">
-												<h1>De: R$ 1.826,00</h1>
-												<h7>Por: R$ 600,00</h7>
-												<p>Em até 6x sem juros!</p>
-
-												<h2> Pague apenas:</h2>
-												<h4>R$ 100,00/mês</h4>
-												<h3>Oferta exclusiva RG Lançamentos</h3>
-												<h5>Modalidade:</h5>
-												<p>EAD (Online)</p>
-												<h6>Inclui:</h6>
-												<p>Certificado de Qualificação Profissional</p>
-												<p>Diploma de Nível Técnico</p>
-												<p>Direito ao CRECI</p>
-												<button className="matricule-se-button-placa"
-												        onClick={() => window.location.href = 'https://www.alboompay.com/RitaLeite/button/65306fc07b503d0026e77449'}>
-														Inscreva-se!
-												</button>
-										</div>
-
-
-								</div>
 						</div>
-
 				</div>
-				<div className="syllabus-section" >
+				<div className="syllabus-section">
 						<h1>PROGRAMA DO CURSO</h1>
 						<div className="syllabus-section-content">
 								<div className="module 1">
@@ -193,12 +193,13 @@ function App () {
 								</div>
 								<div className="course-numbers">
 										<h5>Mais Informações</h5>
-										<p>"Após a confirmação de pagamento você receberá um e-mail do instituto monitor para realizar a matrícula, escolher o polo e enviar documentos exigidos para dar início no curso!"</p>
+										<p>"Após a confirmação de pagamento você receberá um e-mail do instituto monitor para realizar a
+												matrícula, escolher o polo e enviar documentos exigidos para dar início no curso!"</p>
 										<ul>
-												<li> <b>Carga horária:</b> 800 horas</li>
-												<li> <b>Estágio Profissional:</b> 150 horas</li>
-												<li> <b>Carga horária total:</b> 950 horas</li>
-												<li> <b>Total de avaliações:</b> 10 Provas Presenciais</li>
+												<li><b>Carga horária:</b> 800 horas</li>
+												<li><b>Estágio Profissional:</b> 150 horas</li>
+												<li><b>Carga horária total:</b> 950 horas</li>
+												<li><b>Total de avaliações:</b> 10 Provas Presenciais</li>
 
 										</ul>
 								</div>
@@ -303,9 +304,10 @@ function App () {
 						</Slider>
 				</div>
 				<div className="map-sec" id='unidades'>
-					<h2>Unidades</h2>
-					<p>Como instituição de educação a distância que quer acompanhar de perto o desenvolvimento dos alunos, oferecemos a melhor estrutura e diversas unidades para que você tenha mais opções nos seus estudos.</p>
-                    <p>Confira abaixo o endereço de nossas Unidades e Polos da cidade de São Paulo</p>
+						<h2>Unidades</h2>
+						<p>Como instituição de educação a distância que quer acompanhar de perto o desenvolvimento dos alunos,
+								oferecemos a melhor estrutura e diversas unidades para que você tenha mais opções nos seus estudos.</p>
+						<p>Confira abaixo o endereço de nossas Unidades e Polos da cidade de São Paulo</p>
 
 						<Polos></Polos>
 				</div>
