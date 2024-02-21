@@ -3,6 +3,7 @@
 }
 .App {
   text-align: center;
+  
 }
 html {
   scroll-behavior: smooth;
@@ -104,11 +105,11 @@ background-color: rgba(226, 93, 26, 0.842);
   text-align: center;
   align-content: center;
   position: relative;
-  background-image: url('./img/fundo.jpg');
-  background-position: center;
+  background-image: url('./img/banner.png');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+  width: 100%;
 }
 
 .banner-content::before {
@@ -118,7 +119,8 @@ background-color: rgba(226, 93, 26, 0.842);
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(16, 16, 16, 0.438);
+  width: 100%;
+  background: rgba(42, 42, 42, 0.63);
   filter: blur(100%) ;
   z-index: -1;
 }
@@ -154,7 +156,7 @@ background-color: rgba(226, 93, 26, 0.842);
 .matricule-se-button-placa {
   padding: 20px;
   font-size: 17px;
-  background: linear-gradient(to top,#133855, #4162be);
+  background: linear-gradient(to top,#133855, #16212c);
   color: white;
   border: none;
   width: 250px;
@@ -162,6 +164,7 @@ background-color: rgba(226, 93, 26, 0.842);
   font-weight: bold;
   border-radius: 35px;
   cursor: pointer;
+  box-shadow: 2px 2px 3px #18181d;
   /*margin-top: 450px;*/
   /*margin-left: 750px;*/
 }
@@ -270,17 +273,19 @@ font-weight: normal;
 
 .aboutus-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  padding: 20px 20px;
-  background: linear-gradient(to top, #e04e04, #f87431);
-  margin:20px;
+  padding: 20px ;
+  background: rgba(224, 78, 4, 0.87);
   border-radius:20px;
   color: #e3e2e2;
   box-shadow: 2px 2px 15px #082238;
   position: fixed;
-  z-index: 1000;
-  margin-left: 1500px;
+  right: 20px;
+  top: 70px;
+  width: 300px;
+  z-index: 10000;
+  overflow: hidden;
 }
 
 
@@ -295,55 +300,62 @@ font-weight: normal;
 .aboutus-section h7{
   margin: 0px;
   margin-top: 20px;
-  font-size: 25px;
+  font-size: 1.9rem;
  color: #ffffff;
  font-weight: bold;
  
 }
 .aboutus-section h2{
   margin: 0px;
-  font-family: "Oswald", sans-serif;
-  font-size: 25px;
+  /*font-family: "Oswald", sans-serif;*/
+  font-size: 1.3rem;
   color: #fdfdfd;
 }
 .aboutus-section h5 {
   color: #f8f8f8;
-  font-size: 18px;
+  font-size: 1.3rem;
   margin-bottom: 5px;
 }
 .aboutus-section h6 {
   color: #f8f8f8;
-  font-size: 18px;
+  font-size: 1.3rem;
   margin-bottom: 5px;
+  margin-top: 30px;
 }
 
 .aboutus-section h4{
   margin: 0px;
-  font-size: 30px;
-  font-weight: normal;
-  font-family: "Oswald", sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  /*font-family: "Oswald", sans-serif;*/
   
 }
 .aboutus-section h3 {
-  color: #fafafa;
-  font-size: 18px;
-  margin-top: 5px;
-  margin-bottom: 35px;
+  color: rgb(24, 24, 29);
+  font-size: 1rem;
+  text-align: center;
+  margin-top:14px;
+  font-weight: normal;
 }
 .aboutus-section p {
   color: #ffffff;
-  font-size: 15px;
-  
+  font-size: 1.3rem;
+  line-height: 0.9;
+  text-align: center;
+  font-weight: normal;
 }
 
 .aboutus-section h4 {
   margin: 0px;
   font-weight: bold;
-  color: #f5cc46;
+  color: #ecdb40;
+  text-shadow: 2px 2px 1px #18181d;
   font-family: "Oswald", sans-serif;
+  font-size: 2.3rem;
+  margin-top: 5px;
 }
 .aboutus-text {
-  margin-top:20px;
+  /*margin-top:20px;*/
 }
 
 .syllabus-section-content {
@@ -375,7 +387,7 @@ font-size: 25px;
   box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   background: #e3e2e2;
-  width: 500px;
+  width: 400px;
   height: 350px;
   margin:auto;
   justify-content: center;
@@ -419,8 +431,7 @@ font-size: 25px;
 .course-numbers {
   display: flex;
   flex-direction: column;
- 
-  width: 80%;
+  width: 60%;
   margin-top: 40px;
 }
 .course-numbers h5 {
@@ -505,6 +516,9 @@ width:  100%;
 align-items: center;
 margin:auto;
 justify-content: center;
+
+background-color: #133855;
+
 }
 
 .vantagens-curso h1 {
@@ -513,7 +527,7 @@ justify-content: center;
   color: #e3e2e2;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   justify-content: center;
-  padding-bottom: 40px;
+  padding-right:100px;
 }
 .vantagens-content {
   display: flex;
@@ -522,10 +536,11 @@ justify-content: center;
   align-items: center;
   align-content: center;
   align-self: center;
+  text-align: center;
   width:300px;
   height:300px;
-  padding:15px;
-  border-right: 2px solid #e3e2e2;
+  padding:10px;
+  border-right: 1px solid #e3e2e2;
 }
 .vantagens-content:last-child {
   border-right: none;
@@ -538,6 +553,7 @@ justify-content: center;
 }
 .vantagens-content img{
   min-width: 50px;
+  
 }
 
 .sobre-o-curso-section {
@@ -775,4 +791,69 @@ flex-direction: row;
   text-align: left;
   max-width: 70%;
   margin-left: 170px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .banner {
+    height:100vh;
+
+  }
+  .banner-content {
+    height:100vh;
+    background-image: url('./img/banner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner img {
+    height:100%;
+    object-fit:cover;
+    background-clip: content-box;
+  }
+  .banner-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(42, 42, 42, 0.84);
+    filter: blur(100%) ;
+    z-index: -1;
+  }
+  .aboutus-section {
+    display:none !important;
+
+  }
+  .corretor-section {
+    padding:0 !important;
+    margin:0 !important;
+    width:100% !important;
+    height:100vh !important;
+  }
+  .corretor-section h2 p,
+  .corretor-section p {
+    align-items: center;
+    width:80%;
+  }
+  .corretor-section h2 {
+    font-size:25px !important;
+    text-align: center;
+    padding-top: 100px !important;
+  }
+  .corretor-section h2 p{
+    font-size:35px !important;
+    text-align: center;
+    width: 100%;
+  }
+.module h5,
+.module ul {
+  width: fit-content;
+}
+.quem-sou-box {
+  width: fit-content;
+
+}
 }
