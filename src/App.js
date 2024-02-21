@@ -25,6 +25,7 @@ import time from './img/time.png';
 import money from './img/money.png';
 import carreira from './img/carreira.png';
 import Map from './map.js';
+import Polos from './polos.js';
 
 
 import 'slick-carousel/slick/slick.css';
@@ -90,6 +91,7 @@ function App () {
 										<li><a href="#home">Home</a></li>
 										<li><a href="#sobre">Sobre</a></li>
 										<li><a href="#vantagens">Vantagens</a></li>
+										<li><a href="#unidades">Unidades</a></li>
 								</ul>
 
 
@@ -143,11 +145,11 @@ function App () {
 										<div className="aboutus-text">
 												<h1>De: R$ 1.826,00</h1>
 												<h7>Por: R$ 600,00</h7>
-												<p>Oferta exclusiva RG Lançamentos</p>
+												<p>Em até 6x sem juros!</p>
 
 												<h2> Pague apenas:</h2>
 												<h4>R$ 100,00/mês</h4>
-												<h3>Em até 6x sem juros!</h3>
+												<h3>Oferta exclusiva RG Lançamentos</h3>
 												<h5>Modalidade:</h5>
 												<p>EAD (Online)</p>
 												<h6>Inclui:</h6>
@@ -300,9 +302,12 @@ function App () {
 								</div>))}
 						</Slider>
 				</div>
-				<div className="map-sec">
+				<div className="map-sec" id='unidades'>
+					<h2>Unidades</h2>
+					<p>Como instituição de educação a distância que quer acompanhar de perto o desenvolvimento dos alunos, oferecemos a melhor estrutura e diversas unidades para que você tenha mais opções nos seus estudos.</p>
+                    <p>Confira abaixo o endereço de nossas Unidades e Polos da cidade de São Paulo</p>
 
-						<Map></Map>
+						<Polos></Polos>
 				</div>
 				<FloatingWhatsApp
 						phoneNumber="(11) 997075-3810"

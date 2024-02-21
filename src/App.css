@@ -104,7 +104,7 @@ background-color: rgba(226, 93, 26, 0.842);
   text-align: center;
   align-content: center;
   position: relative;
-  background-image: url('./img/casa6.jpg');
+  background-image: url('./img/fundo.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@ background-color: rgba(226, 93, 26, 0.842);
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(16, 16, 16, 0.753);
+  background: rgba(16, 16, 16, 0.438);
   filter: blur(100%) ;
   z-index: -1;
 }
@@ -135,7 +135,7 @@ background-color: rgba(226, 93, 26, 0.842);
 .matricule-se-button {
   padding: 20px;
   font-size: 17px;
-  background: linear-gradient(to bottom, #d15519, #f09745);
+  background: linear-gradient(to top, #d15519, #f09745);
   color: white;
   border: none;
   width: 250px;
@@ -154,7 +154,7 @@ background-color: rgba(226, 93, 26, 0.842);
 .matricule-se-button-placa {
   padding: 20px;
   font-size: 17px;
-  background: linear-gradient(to top,#16417a, #4162be);
+  background: linear-gradient(to top,#133855, #4162be);
   color: white;
   border: none;
   width: 250px;
@@ -349,7 +349,7 @@ font-weight: normal;
 .syllabus-section-content {
   display:flex;
   flex-direction: row;
-  background: #2B2B30;
+  background: #133855;
   justify-content:center;
   flex-wrap: wrap;
   flex: 2;
@@ -386,13 +386,13 @@ font-size: 25px;
   margin:20px;
 }
 .syllabus-section {
-  background: #2B2B30 !important;
+  background: #133855 !important;
   padding: 20px;
   color: #e3e2e2;
 }
 
 .syllabus-section h1{
-  background: #2B2B30 !important;
+  background: #133855 !important;
   padding: 30px;
   color: #e3e2e2;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -403,7 +403,7 @@ font-size: 25px;
   height:fit-content;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   font-family: "Oswald", sans-serif;
-  background: #2B2B30;
+  background: #133855;
   margin-bottom: 30px;
 
 }
@@ -593,7 +593,7 @@ margin: auto;
   min-width:400px;
   max-width:500px;
   margin:20px;
-  background: rgba(24, 24, 29, 0.9);
+  background: #133855;
   /*padding: 15px;*/
   padding-top: 30px;
   padding-bottom: 30px;
@@ -625,8 +625,8 @@ margin: auto;
 }
 .quem-sou-image img{
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 230px;
+  height: 230px;
   object-fit: cover;
   background: #133855;
 }
@@ -765,4 +765,8 @@ flex-direction: row;
 
 .vantagens-curso p {
   color: #ebe1e2;
+}
+
+.map-sec h2 {
+  align-items: flex-start; 
 }
