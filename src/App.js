@@ -142,15 +142,15 @@ function App () {
 
 										<div className="aboutus-text">
 												<h1>De: R$ 1.826,00</h1>
-												<h1>Por: R$ 600,00</h1>
+												<h7>Por: R$ 600,00</h7>
 												<p>Oferta exclusiva RG Lançamentos</p>
 
 												<h2> Pague apenas:</h2>
 												<h4>R$ 100,00/mês</h4>
-												<ul>Mais opções de parcelamento</ul>
-												<p>Modalidade:</p>
+												<h3>Em até 6x sem juros!</h3>
+												<h5>Modalidade:</h5>
 												<p>EAD (Online)</p>
-												<p>Inclui</p>
+												<h6>Inclui:</h6>
 												<p>Certificado de Qualificação Profissional</p>
 												<p>Diploma de Nível Técnico</p>
 												<p>Direito ao CRECI</p>
@@ -191,7 +191,7 @@ function App () {
 								</div>
 								<div className="course-numbers">
 										<h5>Mais Informações</h5>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+										<p>"Após a confirmação de pagamento você receberá um e-mail do instituto monitor para realizar a matrícula, escolher o polo e enviar documentos exigidos para dar início no curso!"</p>
 										<ul>
 												<li> <b>Carga horária:</b> 800 horas</li>
 												<li> <b>Estágio Profissional:</b> 150 horas</li>
@@ -273,7 +273,7 @@ function App () {
 														Lançamentos.</p>
 										</div>
 										<div className='chamada-instagram'>
-												<p>Explore o fascinante mundo dos imóveis e aprimore sua carreira! 🏡✨ Siga-nos no Instagram
+												<p>Explore o fascinante mundo dos imóveis e aprimore sua carreira! 🏡✨ Me siga no Instagram
 														para
 														dicas, oportunidades e cursos exclusivos</p>
 										</div>

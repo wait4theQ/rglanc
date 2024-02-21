@@ -118,7 +118,7 @@ background-color: rgba(226, 93, 26, 0.842);
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(16, 16, 16, 0.95);
+  background: rgba(16, 16, 16, 0.753);
   filter: blur(100%) ;
   z-index: -1;
 }
@@ -127,8 +127,9 @@ background-color: rgba(226, 93, 26, 0.842);
   display:none;
   max-height: 80%;
   object-fit: cover;
-align-self: end;
+  align-self: end;
   margin-left:20px;
+  
 }
 
 .matricule-se-button {
@@ -153,7 +154,7 @@ align-self: end;
 .matricule-se-button-placa {
   padding: 20px;
   font-size: 17px;
-  background: linear-gradient(to bottom, #133855, #276fa7);
+  background: linear-gradient(to top,#16417a, #4162be);
   color: white;
   border: none;
   width: 250px;
@@ -166,7 +167,7 @@ align-self: end;
 }
 
 .matricule-se-button-placa:hover {
-  background: linear-gradient(to bottom,#ccd670, #ddcc6e);
+  background: linear-gradient(to bottom,#d15519, #ddcc6e);
 
 }
 .course-section {
@@ -199,6 +200,8 @@ align-self: center;
   max-height:500px;
   text-align: center;
   margin:100px;
+ 
+  
 
 }
 
@@ -213,7 +216,7 @@ align-self: center;
 .corretor-section h2 {
   font-size: 25px; /* Tamanho da fonte do título */
   margin: 20px; /* Espaçamento abaixo do título */
-  color: #dfdbdb;
+  color: #dad9d9;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
@@ -249,7 +252,7 @@ font-size: 12px;
   font-family: "Ubuntu", sans-serif;
   width:50%;
   margin:auto;
-  color: #adadad;
+  color: #d4d4d4;
   line-height: 1.0;
 font-weight: normal;
 }
@@ -270,7 +273,7 @@ font-weight: normal;
   flex-direction: column;
   justify-content: center;
   padding: 20px 20px;
-  background-color: #d15519;
+  background: linear-gradient(to top, #e04e04, #f87431);
   margin:20px;
   border-radius:20px;
   color: #e3e2e2;
@@ -280,13 +283,38 @@ font-weight: normal;
   margin-left: 1500px;
 }
 
-.aboutus-section p{
-  font-size: 17px;
+
+.aboutus-section h1{
+  margin: 0px;
+  margin-top: 20px;
+  font-size: 25px;
+  text-decoration: line-through;
+  color: #ffffff;
+  
+}
+.aboutus-section h7{
+  margin: 0px;
+  margin-top: 20px;
+  font-size: 25px;
+ color: #ffffff;
+ font-weight: bold;
+ 
 }
 .aboutus-section h2{
   margin: 0px;
   font-family: "Oswald", sans-serif;
   font-size: 25px;
+  color: #fdfdfd;
+}
+.aboutus-section h5 {
+  color: #f8f8f8;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.aboutus-section h6 {
+  color: #f8f8f8;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .aboutus-section h4{
@@ -294,13 +322,24 @@ font-weight: normal;
   font-size: 30px;
   font-weight: normal;
   font-family: "Oswald", sans-serif;
+  
 }
-
+.aboutus-section h3 {
+  color: #fafafa;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+.aboutus-section p {
+  color: #ffffff;
+  font-size: 15px;
+  
+}
 
 .aboutus-section h4 {
   margin: 0px;
   font-weight: bold;
-  color: #082238;
+  color: #f5cc46;
   font-family: "Oswald", sans-serif;
 }
 .aboutus-text {
@@ -380,14 +419,18 @@ font-size: 25px;
 .course-numbers {
   display: flex;
   flex-direction: column;
+ 
   width: 80%;
   margin-top: 40px;
 }
 .course-numbers h5 {
   font-size: 25px;
   height: 10px;
+  text-align: center;
   color: #e3e2e2;
+  width: 100%;
 }
+
 
 .course-numbers p {
   font-size: 15px;
