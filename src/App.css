@@ -768,5 +768,11 @@ flex-direction: row;
 }
 
 .map-sec h2 {
-  align-items: flex-start; 
+  text-align: center;
+}
+
+.map-sec p {
+  text-align: left;
+  max-width: 70%;
+  margin-left: 170px;
 }
