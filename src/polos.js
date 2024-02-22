@@ -28,20 +28,20 @@ const Polo = ({ city, address }) => {
 
 const Polos = () => {
   const poloData = [
-    { city: 'ARAÇATUBA', address: 'Rua Gonçalves Ledo, 568 - São Joaquim – Araçatuba – SP – CEP 16050-300' },
-    { city: 'BAURU', address: 'Av. Duque de Caxias - Quadra 22-55, - Vila Cardia – Bauru – SP – CEP 17011-066' },
-    { city: 'CAMPINAS', address: 'Rua Antonio Alvarez Lobo, 172 - Botafogo – Campinas – SP – CEP 13020-110' },
-    { city: 'ITATIBA', address: 'Rua Comendador Franco, 11 - Sala 40 - Centro – Itatiba – SP – CEP 13250-240' },
-    { city: 'MOGI DAS CRUZES', address: 'Rua Capitão Manoel Caetano, 223 - Centro – Mogi das Cruzes – SP – CEP 08710-190' },
-    { city: 'PENAPÓLIS', address: 'Rua Santa Clara, 247 - Centro – Penápolis – SP – CEP 16300-000' },
-    { city: 'PIRACICABA', address: 'Rua Alferes José Caetano, 1448 - Centro – Piracicaba – SP – CEP 13400-123' },
-    { city: 'REGISTRO', address: 'Rua Tamekishi Takano, 146 - (lito Palace Hotel) - Centro – Registro – SP – CEP 11900-000' },
-    { city: 'SANTA CRUZ DO RIO PARDO', address: 'Av. Tiradentes, 728 - Centro – Santa Cruz do Rio Pardo – SP – CEP 18900-000' },
-    { city: 'SÃO CARLOS', address: 'Rua Ambrósio dos Santos, 1081 - Planalto Paraíso – São Carlos – SP – CEP 13562-000' },
-    { city: 'SÃO JOSÉ DO RIO PRETO', address: 'Rua Santo Agostinho, 312 - Vila Nossa Senhora da Paz – São José do Rio Preto – SP – CEP 15025-220' },
-    { city: 'SÃO JOSÉ DOS CAMPOS', address: 'Avenida Teopompo de Vasconcelos, 57 - Vila Adyana – São José dos Campos – SP – CEP 12243-830' },
+    { city: 'ARAÇATUBA - SP', address: 'Rua Gonçalves Ledo, 568 - São Joaquim – Araçatuba – SP – CEP 16050-300' },
+    { city: 'BAURU - SP', address: 'Av. Duque de Caxias - Quadra 22-55, - Vila Cardia – Bauru – SP – CEP 17011-066' },
+    { city: 'CAMPINAS - SP', address: 'Rua Antonio Alvarez Lobo, 172 - Botafogo – Campinas – SP – CEP 13020-110' },
+    { city: 'ITATIBA - SP', address: 'Rua Comendador Franco, 11 - Sala 40 - Centro – Itatiba – SP – CEP 13250-240' },
+    { city: 'MOGI DAS CRUZES - SP', address: 'Rua Capitão Manoel Caetano, 223 - Centro – Mogi das Cruzes – SP – CEP 08710-190' },
+    { city: 'PENAPÓLIS - SP', address: 'Rua Santa Clara, 247 - Centro – Penápolis – SP – CEP 16300-000' },
+    { city: 'PIRACICABA - SP', address: 'Rua Alferes José Caetano, 1448 - Centro – Piracicaba – SP – CEP 13400-123' },
+    { city: 'REGISTRO - SP', address: 'Rua Tamekishi Takano, 146 - (lito Palace Hotel) - Centro – Registro – SP – CEP 11900-000' },
+    { city: 'SANTA CRUZ DO RIO PARDO - SP', address: 'Av. Tiradentes, 728 - Centro – Santa Cruz do Rio Pardo – SP – CEP 18900-000' },
+    { city: 'SÃO CARLOS - SP', address: 'Rua Ambrósio dos Santos, 1081 - Planalto Paraíso – São Carlos – SP – CEP 13562-000' },
+    { city: 'SÃO JOSÉ DO RIO PRETO - SP', address: 'Rua Santo Agostinho, 312 - Vila Nossa Senhora da Paz – São José do Rio Preto – SP – CEP 15025-220' },
+    { city: 'SÃO JOSÉ DOS CAMPOS - SP', address: 'Avenida Teopompo de Vasconcelos, 57 - Vila Adyana – São José dos Campos – SP – CEP 12243-830' },
     { city: 'CAMPUS SÃO PAULO', address: 'Avenida Rangel Pestana, 1.105 - Brás – São Paulo – SP – CEP 03001-000' },
-    { city: 'VOTUPORANGA', address: 'Rua Denizar Vidigal, 3620 - Chácara das Paineiras – Votuporanga – SP – CEP 15502-221' }, 
+    { city: 'VOTUPORANGA - SP', address: 'Rua Denizar Vidigal, 3620 - Chácara das Paineiras – Votuporanga – SP – CEP 15502-221' }, 
   ];
 
   return (
