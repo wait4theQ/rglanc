@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 * {
   font-family: "Ubuntu", sans-serif;
 }
+
 .App {
   text-align: center;
   
@@ -52,12 +55,12 @@ html {
   width: auto;
 }
 .logo-container h1{
-  font-size: 20px;
+  font-size: 30px;
   color: #e3e2e2;
-  font-family:"Poppins", sans-serif ;
-  letter-spacing: 1px;
+  font-family:"Bebas Neue", sans-serif ;
+  letter-spacing: 5px;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none;
   justify-content: center;
   margin-left: -80px;
@@ -86,29 +89,29 @@ background-color: rgba(226, 93, 26, 0.842);
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
   padding: 15px;
-  
   }
 
 .banner {
   display: flex;
-  height:fit-content;
+  height:70vh;
   background-color: #e3e2e2;
 }
 
 .banner-content {
   display: flex;
-  height:80vh;
+  height:70vh;
   flex-direction: row;
   text-align: center;
   align-content: center;
-  position: relative;
-  background-image: url('./img/banner.png');
+  background-image: url('./img/banner6.png');
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 1;
+  background-position: center;
+  padding: 10px;
   width: 100%;
 }
 
@@ -120,19 +123,11 @@ background-color: rgba(226, 93, 26, 0.842);
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(42, 42, 42, 0.63);
   filter: blur(100%) ;
   z-index: -1;
+  height:70vh;
 }
 
-.banner-image {
-  display:none;
-  max-height: 80%;
-  object-fit: cover;
-  align-self: end;
-  margin-left:20px;
-  
-}
 
 .matricule-se-button {
   padding: 20px;
@@ -199,65 +194,59 @@ align-self: center;
 .corretor-section {
   /*background-color: #133855; !* Cor de fundo escura (azul escuro ou laranja escuro) *!*/
   color: #e7e4e4; /* Cor do texto */
-  text-align: center;
-  max-height:500px;
-  text-align: center;
-  margin:100px;
- 
-  
-
-}
-
-.corretor-section2 {
-  /*background-color: #133855; !* Cor de fundo escura (azul escuro ou laranja escuro) *!*/
-  color: #444444; /* Cor do texto */
-  text-align: center;
-  display: flex;
+  text-align: start;
   height:fit-content;
+  width: 60%;
+  margin:auto;
+  margin-left: 100px;
+padding-top:20px;
+
 }
 
 .corretor-section h2 {
-  font-size: 25px; /* Tamanho da fonte do título */
-  margin: 20px; /* Espaçamento abaixo do título */
-  color: #dad9d9;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-size: 23px; /* Tamanho da fonte do título */
+  /*margin: 20px; !* Espaçamento abaixo do título *!*/
+  color: #d15519;
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  letter-spacing: 1px;
+  margin: 5px !important;
+  flex-direction: column;
+  align-items: start;
+  width:50%;
 }
 
 .corretor-section p {
   text-align: start;
-  font-size: 1rem; /* Tamanho da fonte do parágrafo */
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  line-height: 2.0;
-  width:50%;
-  width:50%;
+  font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.6;
+  color: #133855;
   margin:auto;
-
 }
 
-.corretor-section h2 p {
-  font-size: 45px; /* Tamanho da fonte do título */
-  margin: 10px; /* Espaçamento abaixo do título */
-  color: #d15519;
-  font-family: "Poppins", sans-serif;
+.creci-tti {
+  font-size: 70px; /* Tamanho da fonte do título */
+  color: #133855;
+  margin: 5px !important;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
-  text-shadow: 2px 2px 1px #133855;
-  text-align: center;
-  width:100%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.0;
+  text-shadow: 2px 1px 3px rgba(65, 65, 65, 0.81);
 }
 .corretor-section2 {
-  margin:20px;
-  color: #ece8e8;
+  width:50%;
 }
 .corretor-section2 p{
 font-size: 12px;
   font-family: "Ubuntu", sans-serif;
-  width:50%;
-  margin:auto;
-  color: #d4d4d4;
+  margin-top:10px;
+  color: rgba(68, 68, 68, 0.8);
   line-height: 1.0;
 font-weight: normal;
+  text-align: start;
 }
 .saiba-mais-button  {
   padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
@@ -276,67 +265,27 @@ font-weight: normal;
   flex-direction: row;
   justify-content: center;
   padding: 20px ;
-  background: rgba(224, 78, 4, 0.87);
+  background: rgba(17, 17, 17, 0.6);
   border-radius:20px;
   color: #e3e2e2;
   box-shadow: 2px 2px 15px #082238;
   position: fixed;
   right: 20px;
   top: 70px;
-  width: 255px;
+  min-width: 200px;
+  max-width: 300px;
   z-index: 10000;
-  overflow: hidden;
 }
 
-
-.aboutus-section h1{
+.aboutus-section h2{
   margin: 0px;
-  margin-top: 20px;
-  font-size: 25px;
-  text-decoration: line-through;
-  color: #ffffff;
-  
-}
-.aboutus-section h7{
-  margin: 0px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1.9rem;
  color: #ffffff;
  font-weight: bold;
  
 }
-.aboutus-section h2{
-  margin: 0px;
-  /*font-family: "Oswald", sans-serif;*/
-  font-size: 1.3rem;
-  color: #fdfdfd;
-}
-.aboutus-section h5 {
-  color: #f8f8f8;
-  font-size: 1.3rem;
-  margin-bottom: 5px;
-}
-.aboutus-section h6 {
-  color: #f8f8f8;
-  font-size: 1.3rem;
-  margin-bottom: 5px;
-  margin-top: 30px;
-}
 
-.aboutus-section h4{
-  margin: 0px;
-  font-size: 2.3rem;
-  font-weight: bold;
-  /*font-family: "Oswald", sans-serif;*/
-  
-}
-.aboutus-section h3 {
-  color: rgb(24, 24, 29);
-  font-size: 1rem;
-  text-align: center;
-  margin-top:14px;
-  font-weight: normal;
-}
 .aboutus-section p {
   color: #ffffff;
   font-size: 1.3rem;
@@ -345,17 +294,22 @@ font-weight: normal;
   font-weight: normal;
 }
 
-.aboutus-section h4 {
-  margin: 0px;
+.aboutus-text h1 {
+  margin: 5px;
   font-weight: bold;
-  color: #ecdb40;
-  text-shadow: 2px 2px 1px #18181d;
-  font-family: "Oswald", sans-serif;
-  font-size: 2.3rem;
+  color: #d15519;
+  text-shadow: 2px -2px 1px #18181d, 0px 0px 10px rgba(24, 24, 29, 0.91), 0 10px 25px rgba(24, 24, 29, 0.59);  font-family: "Bebas Neue", sans-serif;
+  font-size: 45px;
+  letter-spacing: 3px;
   margin-top: 5px;
 }
-.aboutus-text {
-  /*margin-top:20px;*/
+.aboutus-text li {
+  list-style: square;
+  text-align: start;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: normal;
 }
 
 .syllabus-section-content {
@@ -369,11 +323,12 @@ font-weight: normal;
 
 .syllabus-section-content h5 {
 font-size: 25px;
-  color: rgb(209, 85, 25);
+  color: #d15519;
   text-shadow: 1px 1px 1px #000000;
   height: 50px;
   width:500px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
   text-align: center;
   text-wrap: normal;
 }
@@ -382,21 +337,21 @@ font-size: 25px;
   display:  flex;
   flex-direction: column;
   text-align: start;
-  color: rgb(20, 18, 23);
-  border: 3px solid #d15519;
-  box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.8);
-  border-radius: 20px;
+  color: #131313;
   background: #e3e2e2;
-  width: 400px;
-  height: 350px;
+  /*border: 3px solid #d15519;*/
+  box-shadow: 3px 3px 2px rgba(19, 19, 19, 0.7);
+  /*border-radius: 10px;*/
+  border: 3px outset #131313;
+  width: 85%;
+  height: 70%;
   margin:auto;
+  padding: 10px;
   justify-content: center;
+  align-self: center;
   flex:1;
 }
 
-.module {
-  margin:20px;
-}
 .syllabus-section {
   background: #133855 !important;
   padding: 20px;
@@ -405,27 +360,32 @@ font-size: 25px;
 
 .syllabus-section h1{
   background: #133855 !important;
-  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
   color: #e3e2e2;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  letter-spacing: 10px;
 }
 
 .module h5{
   margin:0 ;
+  font-size: 28px;
   height:fit-content;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  font-family: "Oswald", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   background: #133855;
   margin-bottom: 30px;
-
+  font-weight: lighter;
 }
 
 .syllabus-section-content li {
   list-style: none;
-  font-size: 18px;
-  padding: 15px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-size: 17px;
+  padding: 5px;
+font-family: "Ubuntu", sans-serif;
+
 }
 
 .course-numbers {
@@ -455,12 +415,14 @@ font-size: 25px;
   justify-content: center;
   color: #adadad;
   margin: auto;
-padding:30px;
+  padding:30px;
 }
 .course-numbers li b {
   color: #e3e2e2;
   text-shadow: 2px 2px 0 #18181d;
   font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 .course-numbers li {
@@ -469,8 +431,11 @@ padding:30px;
   background: rgba(24, 24, 29, 0.76);
   margin:5px;
   box-shadow: 2px 2px 2px 2px #18181d;
-  height:30px;
-
+  /*height:30px;*/
+  padding: 15px;
+  width:fit-content;
+  justify-content: center;
+  align-items: center;
 }
 .testimonials-section {
   background-color: #444;
@@ -512,11 +477,10 @@ padding:30px;
 .vantagens-curso {
 display: flex;
 flex-wrap: wrap;
-width:  100%;
+width:100%;
 align-items: center;
 margin:auto;
 justify-content: center;
-
 background-color: #133855;
 
 }
@@ -527,7 +491,16 @@ background-color: #133855;
   color: #e3e2e2;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   justify-content: center;
-  
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+.vantagens-content h3 {
+font-size: 18px;
+}
+
+.vantagens-content p {
+  font-size: 15px;
 }
 .vantagens-content {
   display: flex;
@@ -537,10 +510,20 @@ background-color: #133855;
   align-content: center;
   align-self: center;
   text-align: center;
-  width:300px;
+  max-width:290px;
   height:300px;
-  padding:10px;
+  padding:5px;
   border-right: 1px solid #e3e2e2;
+}
+
+.vantagens-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  background-color: #133855;
+  align-items: center;
+  margin-right: 20%;
 }
 .vantagens-content:last-child {
   border-right: none;
@@ -552,8 +535,7 @@ background-color: #133855;
   padding: 20px;
 }
 .vantagens-content img{
-  min-width: 50px;
-  
+  min-width: 40px;
 }
 
 .sobre-o-curso-section {
@@ -562,10 +544,10 @@ background-color: #133855;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding:50px;
+  padding-right:10%;
   margin: auto;
-justify-content: center;
-align-content: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .sobre-o-curso-box h2{
@@ -598,8 +580,8 @@ align-self: center;
 .sobre-o-curso-info ul{
   color: #444444;
   text-align: start;
-  width: 70%;
-margin: auto;
+  width: 65%;
+  margin: auto;
 }
 
 .quem-sou-box{
@@ -761,7 +743,6 @@ flex-direction: row;
 
 .CreatedBy p {
   margin: 0;
-
 }
 
 .CreatedBy a {
@@ -773,8 +754,6 @@ flex-direction: row;
   color: #d15519;
 }
 
-
-
 .vantagens-curso h3 {
   color: #ebe1e2;
 }
@@ -782,78 +761,229 @@ flex-direction: row;
 .vantagens-curso p {
   color: #ebe1e2;
 }
-
-.map-sec h2 {
-  text-align: center;
+.map-sec {
+  background-color: #133855;
+  color: #e3e2e2;
+  height:100%;
+  padding:20px;
 }
-
+.map-sec h1 {
+  text-align: center;
+  color: #ebe1e2;
+  font-size: 50px;
+  margin:0;
+  padding-top:20px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.polo-item {
+  color: #131313;
+}
 .map-sec p {
   text-align: left;
   max-width: 70%;
   margin-left: 170px;
 }
+/* TAMANHO MEDIANO*/
+@media only screen and (min-width: 801px) and (max-width: 1080px) {
 
-@media only screen and (max-width: 768px) {
+  .App-header {
+    max-width:100%;
+    padding:0;
+  }
+  .logo2 {
+  max-width: 120px;
+}
+  .logo {
+    max-width: 120px;
+  }
+  .logo-container h1{
+    font-size:20px;
+  }
+  .navigation {
+    margin:20px;
+  }
+  .navigation a {
+    padding:0;
+  }
+  .vantagens-curso {
+    padding: 0;
+    justify-content: center
+  }
+  .vantagens-content {
+    padding:10px;
+    border:none;
+  }
+  .vantagens-curso h1{
+    width: 100%;
+    margin-right: 10%;
+    justify-content: center;
+  }
 
+  .vantagens-content p{
+    font-size: 14px;
+  }
+  .vantagens-content h3 {
+    margin:0;
+    font-size: 20px;
+  }
+  .vantagens-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20%;
+    justify-content: center;
+    background-color: #133855;
+    align-items: center;
+  }
+  .aboutus-section {
+    width: 200px;
+  }
+
+  .sobre-o-curso-info ul{
+    color: #444444;
+    text-align: start;
+    width: 70%;
+    margin: auto;
+  }
+
+  .quem-sou-box{
+    display: flex;
+    flex-direction: column;
+    max-width:300px;
+    margin:10px;
+    background: #133855;
+    /*padding: 15px;*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    color: #e3e2e2;
+    flex: 1;
+    align-self: flex-start;
+
+  }
+  .aboutus-section h2{
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+
+  }
+
+  .aboutus-section p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 0.9;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .aboutus-text h1 {
+    font-weight: bold;
+    color: #d15519;
+    text-shadow: 2px -2px 1px #18181d, 0px 0px 10px rgba(24, 24, 29, 0.91), 0 10px 25px rgba(24, 24, 29, 0.59);  font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+  }
+  .aboutus-text li {
+    list-style: square;
+    text-align: start;
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1;
+    font-weight: normal;
+  }
+  .matricule-se-button-placa {
+    max-width: 200px;
+    padding: 15px;
+  }
+  .sobre-o-curso-section {
+    justify-content: start;
+    padding-right:20%;
+  }
+}
+/* TAMANHO MEDIANO*/
+
+/* TAMANHO PEQUENO*/
+@media only screen and (max-width: 800px) {
   .banner {
-    height:100vh;
-
+    height:100%;
+    width:100%;
   }
   .banner-content {
     height:100vh;
+    width: 100%;
+    margin: auto;
     background-image: url('./img/banner.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
+    padding:0;
   }
-  .banner img {
-    height:100%;
-    object-fit:cover;
-    background-clip: content-box;
-  }
+
   .banner-content::before {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    background: rgba(42, 42, 42, 0.84);
-    filter: blur(100%) ;
+    height:100%;
+    background: rgba(218, 218, 218, 0.6);
     z-index: -1;
+    padding:0;
   }
   .aboutus-section {
     display:none !important;
-
   }
   .corretor-section {
-    padding:0 !important;
-    margin:0 !important;
-    width:100% !important;
-    height:100vh !important;
+    padding:0 ;
+    width: 80%;
+    margin: 20% !important;
+    align-self: center;
   }
-  .corretor-section h2 p,
+
+  .creci-tti,
   .corretor-section p {
     align-items: center;
-    width:80%;
+    width:100%;
   }
-  .corretor-section h2 {
-    font-size:25px !important;
-    text-align: center;
-    padding-top: 100px !important;
-  }
-  .corretor-section h2 p{
+  .creci-tti{
     font-size:35px !important;
     text-align: center;
     width: 100%;
   }
-.module h5,
-.module ul {
-  width: fit-content;
-}
+  .corretor-section h1 {
+  color: #133855;
+
+  }
+  .corretor-section2 p{
+    color: rgba(51, 51, 51, 0.81);
+  }
+    .corretor-section h2 {
+    text-align: center;
+    padding-top: 0 !important;
+      letter-spacing: 0.5px;
+  }
+
+
 .quem-sou-box {
   width: fit-content;
 
 }
+
+.vantagens-content {
+  border:none;
+}
+.vantagens-section{
+  align-items: center;
+width:100%;
+  margin: auto;
+  justify-content: center;
+}
+
+  .sobre-o-curso-section {
+    padding-right:0;
+  }
+
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 //import { MapContainer, TileLayer,  LayerGroup, Marker, Popup, } from 'react-leaflet';
 //import L from 'leaflet';
-import rita2 from './img/cutout.png'
+// import rita2 from './img/cutout.png'
 import 'leaflet/dist/leaflet.css';
 import './App.css';
 import {FloatingWhatsApp} from 'react-floating-whatsapp';
@@ -12,19 +12,16 @@ import rita from './img/picture.jpeg';
 //import mark from './img/mark.png';
 import logo1 from './img/logo-dark.png';
 import logo2 from './img/logo2.png';
-import banner from './img/banner.png';
+import banner from './img/banner3.png';
 import avatar1 from './img/avatar1.png';
 import avatar2 from './img/avatar2.png';
 import avatar3 from './img/avatar3.png';
 import avatar4 from './img/avatar4.png';
-//import image from './img/picture.jpeg';
-//import cutout from './img/cutout.png';
 import requirements from './img/requirements.png';
 import demanda from './img/demanda.png';
 import time from './img/time.png';
 import money from './img/money.png';
 import carreira from './img/carreira.png';
-import Map from './map.js';
 import Polos from './polos.js';
 
 
@@ -65,6 +62,9 @@ function App () {
 						<link
 								href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 								rel="stylesheet"/>
+						<link
+								href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+								rel="stylesheet"/>
 						<div className="logos-container">
 								<div className="logo-container">
 										<a href="/">
@@ -101,21 +101,20 @@ function App () {
 				</header>
 				<div className="aboutus-section">
 						<div className="aboutus-text">
-								<h1>De: R$ 1.826,00</h1>
-								<h7>Por: R$ 600,00</h7>
-								<p>Em até 6x sem juros!</p>
-                                
+								<h2>
+										<s>
+												De: R$ 1.826,00
+										</s><br/>
+										Por: R$ 600,00
+										<p>Em até 6x sem juros!</p>
+								</h2>
 								<h2> Pague apenas:</h2>
-								<h4>R$ 100,00/mês*</h4>
-								<h6>Modalidade:</h6>
-								<p>EAD (Online)</p>
-								{/*<h5>Modalidade:</h5>*/}
-								{/*<p>EAD (Online)</p>*/}
-								<h6>Inclui:
-										<p>Certificado de Qualificação Profissional</p>
-										<p>Diploma de Nível Técnico</p>
-										<p>Direito ao CRECI</p>
-								</h6>
+								<h1>R$ 100,00/mês*</h1>
+								<h2>Inclui:</h2>
+								<li>Certificado de Qualificação</li>
+								<li>Diploma de Nível Técnico</li>
+								<li>Direito ao CRECI</li>
+								<p>Modalidade: EAD</p>
 								<button className="matricule-se-button-placa"
 								        onClick={() => window.location.href = 'https://www.alboompay.com/RitaLeite/button/65306fc07b503d0026e77449'}>
 										Inscreva-se!
@@ -126,22 +125,17 @@ function App () {
 				</div>
 				<div className="banner" id='home'>
 						<div className="banner-content">
-								<img
-										src={banner}
-										alt="Banner"
-										className="banner-image"
-								/>
 								<div className="corretor-section">
-										<h2>Conheça o curso:
-												<p className="creci-tti">
-														CORRETOR CRECI TTI
-												</p>
-												Uma parceria autorizada de vendas do
-												Instituto Monitor. <br/>Matrículas
-												abertas!
-										</h2>
-										{/*<a href="/pagina-de-matricula" className="matricule-se-button">*/}
-										{/*  Matricule-se*/}
+										<h2>Conheça o curso:</h2>
+										<h1 className="creci-tti">
+												Corretor Creci TTI
+										</h1>
+										<h2>Uma parceria autorizada de vendas do
+										Instituto Monitor. Matrículas
+										abertas!
+								</h2>
+								{/*<a href="/pagina-de-matricula" className="matricule-se-button">*/}
+								{/*  Matricule-se*/}
 										{/*</a>*/}
 										{/*<h2>CORRETOR CRECI TTI</h2>*/}
 										<p>✔️ Duração de 6 meses</p>
@@ -208,61 +202,43 @@ function App () {
 
 
 				</div>
-				<div className="vantagens-curso" id='vantagens' style={{ }}>
+				<div className="vantagens-curso" id='vantagens' style={{background: '#133855', padding: '20px 0'}}>
 						<h1>VANTAGENS</h1>
 
-						<div className="vantagens-content">
-								<img src={demanda} alt="vantagem 1"/>
-								<h3>ALTA DEMANDA NO MERCADO</h3>
-								<p>Segundo o COEFI, para atender a demanda do mercado, o número de corretores deveria ser pelo menos o
-										dobro.</p>
-						</div>
-						<div className="vantagens-content">
-								<img src={time} alt='vantagem 2'/>
-								<h3>FLEXIBILIDADE DE HORÁRIO</h3>
-								<p>O corretor de imóveis tem uma agenda flexível com horários alternativos e com isso ganha tempo para
-										dar atenção a outras atividades econômicas.</p>
-						</div>
-						<div className="vantagens-content">
-								<img src={money} alt='vantagem 3'/>
-								<h3>REMUNERAÇÃO ALTA</h3>
-								<p>A comissão do corretor pode chegar a 6% do valor do imóvel. se vender um imóvel de 360 mil reais, sua
-										comissão será de R$ 21.600,00 ao atuar de forma autônoma e em parceria com uma imobiliária, a
-										comissão pode ser de R$ 10.800,00.</p>
-						</div>
-						<div className="separator"></div>
-						<div className="vantagens-content">
-								<img src={carreira} alt='vantagem 4'/>
-								<h3>UMA CARREIRA SÓLIDA</h3>
-								<p>O mercado imobiliário é cheio de oportunidades de crescimento. Se o profissional se dedicar ele
-										consegue construir uma carreira de sucesso no segmento imobiliário.</p>
+						<div className="vantagens-section">
+								<div className="vantagens-content">
+										<img src={demanda} alt="vantagem 1"/>
+										<h3>ALTA DEMANDA NO MERCADO</h3>
+										<p>Segundo o COEFI, para atender a demanda do mercado, o número de corretores deveria ser pelo menos
+												o
+												dobro.</p>
+								</div>
+								<div className="vantagens-content">
+										<img src={time} alt='vantagem 2'/>
+										<h3>FLEXIBILIDADE DE HORÁRIO</h3>
+										<p>O corretor de imóveis tem uma agenda flexível com horários alternativos e com isso ganha tempo
+												para
+												dar atenção a outras atividades econômicas.</p>
+								</div>
+								<div className="vantagens-content">
+										<img src={money} alt='vantagem 3'/>
+										<h3>REMUNERAÇÃO ALTA</h3>
+										<p>A comissão do corretor pode chegar a 6% do valor do imóvel. se vender um imóvel de 360 mil reais,
+												sua
+												comissão será de R$ 21.600,00 ao atuar de forma autônoma e em parceria com uma imobiliária, a
+												comissão pode ser de R$ 10.800,00.</p>
+								</div>
+								<div className="separator"></div>
+								<div className="vantagens-content">
+										<img src={carreira} alt='vantagem 4'/>
+										<h3>UMA CARREIRA SÓLIDA</h3>
+										<p>O mercado imobiliário é cheio de oportunidades de crescimento. Se o profissional se dedicar ele
+												consegue construir uma carreira de sucesso no segmento imobiliário.</p>
+								</div>
 						</div>
 				</div>
 
 				<div className="sobre-o-curso-section">
-						<div className="sobre-o-curso-box">
-								<div className="sobre-o-curso-image">
-										{/* Adicione o caminho da imagem que deseja exibir */}
-										<img src={requirements} alt="Imagem do Curso"/>
-								</div>
-
-								<div className="sobre-o-curso-content">
-										<h2>Requisitos:</h2>
-										<div className="sobre-o-curso-info">
-
-												<ul>
-														<p>✔️ Mínimo 18 anos</p>
-														<p>✔️ Cópia da Certidão de Nascimento ou Casamento</p>
-														<p>✔️ Cópia do RG e CPF</p>
-														<p>✔️ Foto</p>
-														<p>✔️ Cópia autenticada do Certificado de Conclusão do Ensino Médio (antigo 2º Grau) e
-																Histórico
-																Escolar (com lauda ou visto-confere) ou comprovante de que está cursando o ensino
-																médio</p>
-												</ul>
-										</div>
-								</div>
-						</div>
 						<div className='quem-sou-section' id='sobre'>
 								<div className='quem-sou-box'>
 										<div className='quem-sou-image'>
@@ -294,6 +270,30 @@ function App () {
 										</div>
 								</div>
 						</div>
+						<div className="sobre-o-curso-box">
+								<div className="sobre-o-curso-image">
+										{/* Adicione o caminho da imagem que deseja exibir */}
+										<img src={requirements} alt="Imagem do Curso"/>
+								</div>
+
+								<div className="sobre-o-curso-content">
+										<h2>Requisitos:</h2>
+										<div className="sobre-o-curso-info">
+
+												<ul>
+														<p>✔️ Mínimo 18 anos</p>
+														<p>✔️ Cópia da Certidão de Nascimento ou Casamento</p>
+														<p>✔️ Cópia do RG e CPF</p>
+														<p>✔️ Foto</p>
+														<p>✔️ Cópia autenticada do Certificado de Conclusão do Ensino Médio (antigo 2º Grau) e
+																Histórico
+																Escolar (com lauda ou visto-confere) ou comprovante de que está cursando o ensino
+																médio</p>
+												</ul>
+										</div>
+								</div>
+						</div>
+
 				</div>
 				<div className="testimonials-section">
 						<h2>Depoimentos de Clientes</h2>
@@ -305,7 +305,7 @@ function App () {
 						</Slider>
 				</div>
 				<div className="map-sec" id='unidades'>
-						<h2>Unidades</h2>
+						<h1>Unidades</h1>
 						<p>Como instituição de educação a distância que quer acompanhar de perto o desenvolvimento dos alunos,
 								oferecemos a melhor estrutura e diversas unidades para que você tenha mais opções nos seus estudos.</p>
 						<p>Confira abaixo o endereço de nossas Unidades e Polos da cidade de São Paulo</p>
