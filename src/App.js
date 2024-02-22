@@ -25,6 +25,7 @@ import carreira from './img/carreira.png';
 import Polos from './polos.js';
 
 
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -103,7 +104,7 @@ function App () {
 						<div className="aboutus-text">
 								<h2>
 										<s>
-												De: R$ 1.826,00
+												De: R$ 1.199,00
 										</s><br/>
 										Por: R$ 600,00
 										<p>Em até 6x sem juros!</p>
@@ -319,6 +320,9 @@ function App () {
 						chatMessage="Olá, como posso ajudar?"
 						statusMessage="RG Lançamentos"
 						avatarStyle={{width: '50px', height: '50px'}}
+						allowClickAway='true'
+						buttonStyle={{ position: 'fixed', left: '20px', bottom: '30px' }}
+						chatboxStyle={{ position: 'fixed', left: '20px', bottom: '120px' }}
 				/>
 				<Footer></Footer>
 

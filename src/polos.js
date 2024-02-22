@@ -40,8 +40,12 @@ const Polos = () => {
     { city: 'SÃO CARLOS - SP', address: 'Rua Ambrósio dos Santos, 1081 - Planalto Paraíso – São Carlos – SP – CEP 13562-000' },
     { city: 'SÃO JOSÉ DO RIO PRETO - SP', address: 'Rua Santo Agostinho, 312 - Vila Nossa Senhora da Paz – São José do Rio Preto – SP – CEP 15025-220' },
     { city: 'SÃO JOSÉ DOS CAMPOS - SP', address: 'Avenida Teopompo de Vasconcelos, 57 - Vila Adyana – São José dos Campos – SP – CEP 12243-830' },
-    { city: 'CAMPUS SÃO PAULO', address: 'Avenida Rangel Pestana, 1.105 - Brás – São Paulo – SP – CEP 03001-000' },
+    { city: 'CAMPUS SÃO PAULO - SP', address: 'Avenida Rangel Pestana, 1.105 - Brás – São Paulo – SP – CEP 03001-000' },
+    { city: 'SANTOS - SP', address: 'R. Campos Mello, 190 - Vila Matias, Santos - SP, 11015-010' }, 
+    { city: 'TAGUATINGA - DF', address: 'Qsb 04/05 Área Especial 8, St. B Sul - Taguatinga, Brasília - DF, 72015-000' }, 
+    { city: 'SOROCABA - SP', address: 'R. João Pessoa, 112 - Vila Jardini, Sorocaba - SP, 18044-050' }, 
     { city: 'VOTUPORANGA - SP', address: 'Rua Denizar Vidigal, 3620 - Chácara das Paineiras – Votuporanga – SP – CEP 15502-221' }, 
+    
   ];
 
   return (
