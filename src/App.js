@@ -104,10 +104,11 @@ function App () {
 								<h1>De: R$ 1.826,00</h1>
 								<h7>Por: R$ 600,00</h7>
 								<p>Em até 6x sem juros!</p>
-
+                                
 								<h2> Pague apenas:</h2>
 								<h4>R$ 100,00/mês*</h4>
-
+								<h6>Modalidade:</h6>
+								<p>EAD (Online)</p>
 								{/*<h5>Modalidade:</h5>*/}
 								{/*<p>EAD (Online)</p>*/}
 								<h6>Inclui:
@@ -207,7 +208,7 @@ function App () {
 
 
 				</div>
-				<div className="vantagens-curso" id='vantagens' style={{background: '#133855', padding: '20px 0'}}>
+				<div className="vantagens-curso" id='vantagens' style={{ }}>
 						<h1>VANTAGENS</h1>
 
 						<div className="vantagens-content">
