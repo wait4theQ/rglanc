@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   font-family: "Ubuntu", sans-serif;
 }
 
 .App {
   text-align: center;
-  
 }
 html {
   scroll-behavior: smooth;
@@ -22,92 +21,19 @@ html {
   margin: 50px;
 }
 
-.App-header {
-  width: 100%;
-  z-index: 1000;
-  background: linear-gradient(to left, #133855, #051624);
-  padding: 5px;
-  display: flex;
-  height: 45px;
-  justify-content: space-evenly;
-  align-items: center;
-  position: fixed;
-}
-
-.logos-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.logo-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 35px;
-  margin: 20px;
-  margin-top: 40px;
-  justify-content: center;
-}
-
-.logo1 {
-  height: 90px;
-  width: auto;
-}
-.logo-container h1{
-  font-size: 30px;
-  color: #e3e2e2;
-  font-family:"Bebas Neue", sans-serif ;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  justify-content: center;
-  margin-left: -80px;
-  margin-bottom: 35px;
-  cursor: pointer;
-  /*padding: 0;*/
-}
-.logo2 {
-  width: 170px;
-  height: auto;  
-  margin-left: 15px;
-}
-
-.navigation ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;  
-  margin-bottom: 18px;
-}
-.navigation a:hover {
-background-color: rgba(226, 93, 26, 0.842);
-  border-radius: 5px;
-}
-
-.navigation a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 3px;
-  font-weight: bold;
-  padding: 15px;
-  }
-
 .banner {
   display: flex;
-  height:70vh;
+  height: 100vh;
   background-color: #e3e2e2;
 }
 
 .banner-content {
   display: flex;
-  height:70vh;
+  height: 100vh;
   flex-direction: row;
   text-align: center;
   align-content: center;
-  background-image: url('./img/banner6.png');
+  background-image: url("./img/banner7.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -123,11 +49,10 @@ background-color: rgba(226, 93, 26, 0.842);
   bottom: 0;
   left: 0;
   width: 100%;
-  filter: blur(100%) ;
+  filter: blur(100%);
   z-index: -1;
-  height:70vh;
+  height: 100vh;
 }
-
 
 .matricule-se-button {
   padding: 20px;
@@ -145,13 +70,12 @@ background-color: rgba(226, 93, 26, 0.842);
 }
 
 .matricule-se-button:hover {
-  background: linear-gradient(to bottom,#0d3569, #1d95aa);
-
+  background: linear-gradient(to bottom, #0d3569, #1d95aa);
 }
 .matricule-se-button-placa {
   padding: 20px;
   font-size: 17px;
-  background: linear-gradient(to top,#133855, #16212c);
+  background: linear-gradient(to top, #133855, #16212c);
   color: white;
   border: none;
   width: 250px;
@@ -165,19 +89,18 @@ background-color: rgba(226, 93, 26, 0.842);
 }
 
 .matricule-se-button-placa:hover {
-  background: linear-gradient(to bottom,#d15519, #ddcc6e);
-
+  background: linear-gradient(to bottom, #d15519, #ddcc6e);
 }
 .course-section {
   text-align: center;
-  padding: 80px ;
+  padding: 80px;
 }
 
 .course-section h2 {
-  font-size: 28px; 
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: auto;
-align-self: center;
+  align-self: center;
 }
 
 .sobre-o-curso-info {
@@ -191,20 +114,19 @@ align-self: center;
   text-align: center;
   margin-left: 40px;
 }
+
 .corretor-section {
   /*background-color: #133855; !* Cor de fundo escura (azul escuro ou laranja escuro) *!*/
   color: #e7e4e4; /* Cor do texto */
   text-align: start;
-  height:fit-content;
   width: 60%;
-  margin:auto;
+  margin: auto;
   margin-left: 100px;
-padding-top:20px;
-
+  padding-top: 20px;
 }
 
 .corretor-section h2 {
-  font-size: 23px; /* Tamanho da fonte do título */
+  font-size: 25px; /* Tamanho da fonte do título */
   /*margin: 20px; !* Espaçamento abaixo do título *!*/
   color: #d15519;
   font-family: "Bebas Neue", sans-serif;
@@ -213,7 +135,7 @@ padding-top:20px;
   margin: 5px !important;
   flex-direction: column;
   align-items: start;
-  width:50%;
+  width: 50%;
 }
 
 .corretor-section p {
@@ -222,7 +144,7 @@ padding-top:20px;
   font-family: "Ubuntu", sans-serif;
   line-height: 1.6;
   color: #133855;
-  margin:auto;
+  margin: auto;
 }
 
 .creci-tti {
@@ -233,22 +155,23 @@ padding-top:20px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 5px;
-  line-height: 1.0;
+  line-height: 1;
   text-shadow: 2px 1px 3px rgba(65, 65, 65, 0.81);
 }
 .corretor-section2 {
-  width:50%;
+  width: 50%;
 }
-.corretor-section2 p{
-font-size: 12px;
+.corretor-section2 p {
+  font-size: 17px;
   font-family: "Ubuntu", sans-serif;
-  margin-top:10px;
-  color: rgba(68, 68, 68, 0.8);
-  line-height: 1.0;
-font-weight: normal;
+  margin-top: 10px;
+  color: rgb(68, 68, 68);
+  line-height: 1;
+  font-weight: normal;
   text-align: start;
+  width: 100%;
 }
-.saiba-mais-button  {
+.saiba-mais-button {
   padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
   font-size: 18px; /* Ajuste o tamanho da fonte do botão conforme necessário */
   background-color: #d15519; /* Cor de fundo do botão */
@@ -264,26 +187,25 @@ font-weight: normal;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px ;
+  padding: 20px;
   background: rgba(17, 17, 17, 0.6);
-  border-radius:20px;
+  border-radius: 20px;
   color: #e3e2e2;
   box-shadow: 2px 2px 15px #082238;
   position: fixed;
-  right: 20px;
-  top: 70px;
+  right: 1vh;
+  top: 20vh;
   min-width: 200px;
   max-width: 300px;
   z-index: 10000;
 }
 
-.aboutus-section h2{
+.aboutus-section h2 {
   margin: 0px;
   margin-top: 10px;
   font-size: 1.9rem;
- color: #ffffff;
- font-weight: bold;
- 
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .aboutus-section p {
@@ -298,7 +220,9 @@ font-weight: normal;
   margin: 5px;
   font-weight: bold;
   color: #d15519;
-  text-shadow: 2px -2px 1px #18181d, 0px 0px 10px rgba(24, 24, 29, 0.91), 0 10px 25px rgba(24, 24, 29, 0.59);  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 2px -2px 1px #18181d, 0px 0px 10px rgba(24, 24, 29, 0.91),
+    0 10px 25px rgba(24, 24, 29, 0.59);
+  font-family: "Bebas Neue", sans-serif;
   font-size: 45px;
   letter-spacing: 3px;
   margin-top: 5px;
@@ -313,20 +237,20 @@ font-weight: normal;
 }
 
 .syllabus-section-content {
-  display:flex;
+  display: flex;
   flex-direction: row;
   background: #133855;
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap;
   flex: 2;
 }
 
 .syllabus-section-content h5 {
-font-size: 25px;
+  font-size: 25px;
   color: #d15519;
   text-shadow: 1px 1px 1px #000000;
   height: 50px;
-  width:500px;
+  width: 500px;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
   text-align: center;
@@ -334,7 +258,7 @@ font-size: 25px;
 }
 
 .module ul {
-  display:  flex;
+  display: flex;
   flex-direction: column;
   text-align: start;
   color: #131313;
@@ -345,11 +269,11 @@ font-size: 25px;
   border: 3px outset #131313;
   width: 85%;
   height: 70%;
-  margin:auto;
+  margin: auto;
   padding: 10px;
   justify-content: center;
   align-self: center;
-  flex:1;
+  flex: 1;
 }
 
 .syllabus-section {
@@ -358,7 +282,7 @@ font-size: 25px;
   color: #e3e2e2;
 }
 
-.syllabus-section h1{
+.syllabus-section h1 {
   background: #133855 !important;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -369,10 +293,10 @@ font-size: 25px;
   letter-spacing: 10px;
 }
 
-.module h5{
-  margin:0 ;
+.module h5 {
+  margin: 0;
   font-size: 28px;
-  height:fit-content;
+  height: fit-content;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   font-family: "Bebas Neue", sans-serif;
   background: #133855;
@@ -384,8 +308,7 @@ font-size: 25px;
   list-style: none;
   font-size: 17px;
   padding: 5px;
-font-family: "Ubuntu", sans-serif;
-
+  font-family: "Ubuntu", sans-serif;
 }
 
 .course-numbers {
@@ -402,7 +325,6 @@ font-family: "Ubuntu", sans-serif;
   width: 100%;
 }
 
-
 .course-numbers p {
   font-size: 15px;
   width: 60%;
@@ -415,7 +337,7 @@ font-family: "Ubuntu", sans-serif;
   justify-content: center;
   color: #adadad;
   margin: auto;
-  padding:30px;
+  padding: 30px;
 }
 .course-numbers li b {
   color: #e3e2e2;
@@ -429,17 +351,17 @@ font-family: "Ubuntu", sans-serif;
   /*border: 1px solid #e3e2e2;*/
   border-radius: 50px;
   background: rgba(24, 24, 29, 0.76);
-  margin:5px;
+  margin: 5px;
   box-shadow: 2px 2px 2px 2px #18181d;
   /*height:30px;*/
   padding: 15px;
-  width:fit-content;
+  width: fit-content;
   justify-content: center;
   align-items: center;
 }
 .testimonials-section {
   background-color: #444;
-  color: #18181DE5;
+  color: #18181de5;
   text-align: center;
   padding: 40px 20px;
 }
@@ -468,26 +390,25 @@ font-family: "Ubuntu", sans-serif;
 
 /* Adicione estilos para as estrelas */
 .testimonial p::after {
-  content: '⭐⭐⭐⭐⭐'; /* Adapte conforme necessário */
+  content: "⭐⭐⭐⭐⭐"; /* Adapte conforme necessário */
   display: block;
   font-size: 24px;
   margin-top: 10px;
 }
 
 .vantagens-curso {
-display: flex;
-flex-wrap: wrap;
-width:100%;
-align-items: center;
-margin:auto;
-justify-content: center;
-background-color: #133855;
-
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  background-color: #133855;
 }
 
 .vantagens-curso h1 {
   display: flex;
-  width:  100%;
+  width: 100%;
   color: #e3e2e2;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   justify-content: center;
@@ -496,7 +417,7 @@ background-color: #133855;
   letter-spacing: 10px;
 }
 .vantagens-content h3 {
-font-size: 18px;
+  font-size: 18px;
 }
 
 .vantagens-content p {
@@ -505,14 +426,14 @@ font-size: 18px;
 .vantagens-content {
   display: flex;
   flex-direction: column;
-  justify-content:  center;
+  justify-content: center;
   align-items: center;
   align-content: center;
   align-self: center;
   text-align: center;
-  max-width:290px;
-  height:300px;
-  padding:5px;
+  max-width: 290px;
+  height: 300px;
+  padding: 5px;
   border-right: 1px solid #e3e2e2;
 }
 
@@ -534,7 +455,7 @@ font-size: 18px;
   background: #e3e2e2;
   padding: 20px;
 }
-.vantagens-content img{
+.vantagens-content img {
   min-width: 40px;
 }
 
@@ -544,53 +465,53 @@ font-size: 18px;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding-right:10%;
+  padding-right: 10%;
   margin: auto;
   justify-content: center;
   align-content: center;
 }
 
-.sobre-o-curso-box h2{
-  font-size:25px;
+.sobre-o-curso-box h2 {
+  font-size: 25px;
   font-family: "Poppins", sans-serif;
-color: #133855;
+  color: #133855;
   /*text-shadow: 1px 2px 2px rgb(0, 0, 0);*/
-text-align: center;
+  text-align: center;
 }
 
-.sobre-o-curso-image{
+.sobre-o-curso-image {
   display: flex;
   justify-content: center;
-  margin:auto;
+  margin: auto;
 }
-.sobre-o-curso-image img{
-  max-width:200px;
+.sobre-o-curso-image img {
+  max-width: 200px;
 }
 
 .sobre-o-curso-box {
-  width:50%;
-  min-width:400px;
-  max-width:600px;
-  margin:20px;
+  width: 50%;
+  min-width: 400px;
+  max-width: 600px;
+  margin: 20px;
   background: #e3e2e2;
-align-self: center;
-  flex: 1 ;
+  align-self: center;
+  flex: 1;
 }
 
-.sobre-o-curso-info ul{
+.sobre-o-curso-info ul {
   color: #444444;
   text-align: start;
   width: 65%;
   margin: auto;
 }
 
-.quem-sou-box{
+.quem-sou-box {
   display: flex;
   flex-direction: column;
-  width:100%;
-  min-width:400px;
-  max-width:500px;
-  margin:20px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 500px;
+  margin: 20px;
   background: #133855;
   /*padding: 15px;*/
   padding-top: 30px;
@@ -599,19 +520,18 @@ align-self: center;
   color: #e3e2e2;
   flex: 1;
   align-self: center;
-
 }
-.instagram-sobre a img{
-  width:30px;
-  filter: invert(100%) opacity(100%) ;
+.instagram-sobre a img {
+  width: 30px;
+  filter: invert(100%) opacity(100%);
 }
-.instagram-sobre a{
+.instagram-sobre a {
   height: 15px;
-  padding:10px;
+  padding: 10px;
   border-radius: 50px;
   display: flex;
   align-items: center;
-  margin:auto;
+  margin: auto;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -621,7 +541,7 @@ align-self: center;
   background: #ff4e00;
   color: rgba(0, 0, 0, 0.9);
 }
-.quem-sou-image img{
+.quem-sou-image img {
   border-radius: 50%;
   width: 230px;
   height: 230px;
@@ -630,11 +550,11 @@ align-self: center;
 }
 
 .quem-sou-info,
-.chamada-instagram{
+.chamada-instagram {
   display: flex;
   text-align: center;
-  width:80%;
-  margin:auto;
+  width: 80%;
+  margin: auto;
   align-items: center;
   justify-content: center;
 }
@@ -666,11 +586,10 @@ align-self: center;
 }
 
 /* App.css */
-@import '~slick-carousel/slick/slick.css';
-@import '~slick-carousel/slick/slick-theme.css';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 /* Seu código CSS existente aqui */
-
 
 /* Adicione esta seção ao seu arquivo App.css */
 
@@ -682,11 +601,10 @@ align-self: center;
   padding: 15px;
   text-align: center;
 }
-.social-media{
+.social-media {
   display: flex;
-flex-direction: row;
+  flex-direction: row;
   justify-content: center;
-  
 }
 .Footer a {
   color: #fff;
@@ -719,7 +637,6 @@ flex-direction: row;
 
 .Footer a:hover {
   color: #d15519; /* Cor que você deseja quando passar o mouse */
-
 }
 
 .CreatedBy {
@@ -738,7 +655,6 @@ flex-direction: row;
   width: 35%;
   margin: 0 auto;
   margin-top: 10px;
-
 }
 
 .CreatedBy p {
@@ -764,15 +680,15 @@ flex-direction: row;
 .map-sec {
   background-color: #133855;
   color: #e3e2e2;
-  height:100%;
-  padding:20px;
+  height: 100%;
+  padding: 20px;
 }
 .map-sec h1 {
   text-align: center;
   color: #ebe1e2;
   font-size: 50px;
-  margin:0;
-  padding-top:20px;
+  margin: 0;
+  padding-top: 20px;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 10px;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -786,46 +702,27 @@ flex-direction: row;
   margin-left: 170px;
 }
 /* TAMANHO MEDIANO*/
-@media only screen and (min-width: 801px) and (max-width: 1080px) {
-
-  .App-header {
-    max-width:100%;
-    padding:0;
-  }
-  .logo2 {
-  max-width: 120px;
-}
-  .logo {
-    max-width: 120px;
-  }
-  .logo-container h1{
-    font-size:20px;
-  }
-  .navigation {
-    margin:20px;
-  }
-  .navigation a {
-    padding:0;
-  }
+@media only screen and (min-width: 801px) and (max-width: 1440px) {
+  
   .vantagens-curso {
     padding: 0;
-    justify-content: center
+    justify-content: center;
   }
   .vantagens-content {
-    padding:10px;
-    border:none;
+    padding: 10px;
+    border: none;
   }
-  .vantagens-curso h1{
+  .vantagens-curso h1 {
     width: 100%;
     margin-right: 10%;
     justify-content: center;
   }
 
-  .vantagens-content p{
+  .vantagens-content p {
     font-size: 14px;
   }
   .vantagens-content h3 {
-    margin:0;
+    margin: 0;
     font-size: 20px;
   }
   .vantagens-section {
@@ -840,155 +737,32 @@ flex-direction: row;
     width: 200px;
   }
 
-  .sobre-o-curso-info ul{
+  .sobre-o-curso-info ul {
     color: #444444;
     text-align: start;
     width: 70%;
     margin: auto;
   }
 
-  .quem-sou-box{
-    display: flex;
-    flex-direction: column;
-    max-width:300px;
-    margin:10px;
-    background: #133855;
-    /*padding: 15px;*/
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 20px;
-    color: #e3e2e2;
-    flex: 1;
-    align-self: flex-start;
-
-  }
-  .aboutus-section h2{
-    margin: 0px;
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #ffffff;
-    font-weight: bold;
-
-  }
-
-  .aboutus-section p {
-    color: #ffffff;
-    font-size: 0.9rem;
-    line-height: 0.9;
-    text-align: center;
-    font-weight: normal;
-  }
-
-  .aboutus-text h1 {
-    font-weight: bold;
-    color: #d15519;
-    text-shadow: 2px -2px 1px #18181d, 0px 0px 10px rgba(24, 24, 29, 0.91), 0 10px 25px rgba(24, 24, 29, 0.59);  font-family: "Bebas Neue", sans-serif;
-    font-size: 30px;
-    letter-spacing: 3px;
-    margin-top: 5px;
-  }
-  .aboutus-text li {
-    list-style: square;
-    text-align: start;
-    color: #ffffff;
-    font-size: 0.9rem;
-    line-height: 1;
-    font-weight: normal;
-  }
-  .matricule-se-button-placa {
-    max-width: 200px;
-    padding: 15px;
-  }
-  .sobre-o-curso-section {
-    justify-content: start;
-    padding-right:20%;
-  }
 }
 /* TAMANHO MEDIANO*/
 
 /* TAMANHO PEQUENO*/
 @media only screen and (max-width: 800px) {
-  .banner {
-    height:100%;
-    width:100%;
+
+
+  .quem-sou-box {
+    width: fit-content;
   }
-  .banner-content {
-    height:100vh;
+
+  .vantagens-content {
+    border: none;
+  }
+  .vantagens-section {
+    align-items: center;
     width: 100%;
     margin: auto;
-    background-image: url('./img/banner.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-    padding:0;
+    justify-content: center;
   }
 
-  .banner-content::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height:100%;
-    background: rgba(218, 218, 218, 0.6);
-    z-index: -1;
-    padding:0;
-  }
-  .aboutus-section {
-    display:none !important;
-  }
-  .corretor-section {
-    padding:0 ;
-    width: 80%;
-    margin: 20% !important;
-    align-self: center;
-  }
-
-  .creci-tti,
-  .corretor-section p {
-    align-items: center;
-    width:100%;
-  }
-  .creci-tti{
-    font-size:35px !important;
-    text-align: center;
-    width: 100%;
-  }
-  .corretor-section h1 {
-  color: #133855;
-
-  }
-  .corretor-section2 p{
-    color: rgba(51, 51, 51, 0.81);
-  }
-    .corretor-section h2 {
-    text-align: center;
-    padding-top: 0 !important;
-      letter-spacing: 0.5px;
-  }
-
-
-.quem-sou-box {
-  width: fit-content;
-
-}
-
-.vantagens-content {
-  border:none;
-}
-.vantagens-section{
-  align-items: center;
-width:100%;
-  margin: auto;
-  justify-content: center;
-}
-
-  .sobre-o-curso-section {
-    padding-right:0;
-  }
-
-}
-
-.floating-whatsapp-button {
-  position: relative;
-  margin-top: 30px;
 }
