@@ -371,6 +371,7 @@ html {
   font-size: 25px;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
+  margin-top: 100px;
 }
 
 .testimonial {
@@ -417,6 +418,7 @@ html {
   font-size: 50px;
   letter-spacing: 10px;
   margin-bottom: 100px;
+  margin-top: 70px;
 }
 .vantagens-content h3 {
   font-size: 18px;
@@ -472,6 +474,7 @@ html {
   margin: auto;
   justify-content: center;
   align-content: center;
+  
 }
 
 .sobre-o-curso-box h2 {
@@ -480,6 +483,7 @@ html {
   color: #133855;
   /*text-shadow: 1px 2px 2px rgb(0, 0, 0);*/
   text-align: center;
+  
 }
 
 .sobre-o-curso-image {
@@ -489,6 +493,7 @@ html {
 }
 .sobre-o-curso-image img {
   max-width: 200px;
+  
 }
 
 .sobre-o-curso-box {
@@ -499,6 +504,7 @@ html {
   background: #e3e2e2;
   align-self: center;
   flex: 1;
+  margin-top: 100px;
 }
 
 .sobre-o-curso-info ul {
@@ -523,6 +529,7 @@ html {
   color: #e3e2e2;
   flex: 1;
   align-self: center;
+  margin-top: 200px;
 }
 .instagram-sobre a img {
   width: 30px;
