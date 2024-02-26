@@ -744,6 +744,19 @@ html {
     margin: auto;
   }
 
+  .mobile-navigation {
+    background-image: url("components/navbar/menu.png");
+    background-repeat: no-repeat;
+    display:block;
+    height:40px;
+    width:40px;
+    margin-right:20px;
+    object-fit: cover;
+  }
+  .navigation-mobile ul{
+    background-color: #0d3569;
+    height: 100px;
+  }
 }
 /* TAMANHO MEDIANO*/
 
