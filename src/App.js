@@ -4,6 +4,7 @@ import Slider from "react-slick";
 //import L from 'leaflet';
 import Navbar from './components/navbar/index.js'
 import Banner from "./components/banner/index.js";
+import Location from "./components/location/index.js";
 import "leaflet/dist/leaflet.css";
 import "./App.css";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
@@ -257,7 +258,7 @@ function App() {
             Paulo
           </p>
 
-          <Polos></Polos>
+          <Location/>
         </div>
         <FloatingWhatsApp
             phoneNumber="(11) 997075-3810"

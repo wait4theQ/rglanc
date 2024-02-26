@@ -115,126 +115,126 @@ html {
   margin-left: 40px;
 }
 
-.corretor-section {
-  /*background-color: #133855; !* Cor de fundo escura (azul escuro ou laranja escuro) *!*/
-  color: #e7e4e4; /* Cor do texto */
-  text-align: start;
-  width: 60%;
-  margin: auto;
-  margin-left: 100px;
-  padding-top: 20px;
-}
+/*.corretor-section {*/
+/*  !*background-color: #133855; !* Cor de fundo escura (azul escuro ou laranja escuro) *!*!*/
+/*  color: #e7e4e4; !* Cor do texto *!*/
+/*  text-align: start;*/
+/*  width: 60%;*/
+/*  margin: auto;*/
+/*  margin-left: 100px;*/
+/*  padding-top: 20px;*/
+/*}*/
 
-.corretor-section h2 {
-  font-size: 25px; /* Tamanho da fonte do título */
-  /*margin: 20px; !* Espaçamento abaixo do título *!*/
-  color: #d15519;
-  font-family: "Bebas Neue", sans-serif;
-  display: flex;
-  letter-spacing: 1px;
-  margin: 5px !important;
-  flex-direction: column;
-  align-items: start;
-  width: 50%;
-}
+/*.corretor-section h2 {*/
+/*  font-size: 25px; !* Tamanho da fonte do título *!*/
+/*  !*margin: 20px; !* Espaçamento abaixo do título *!*!*/
+/*  color: #d15519;*/
+/*  font-family: "Bebas Neue", sans-serif;*/
+/*  display: flex;*/
+/*  letter-spacing: 1px;*/
+/*  margin: 5px !important;*/
+/*  flex-direction: column;*/
+/*  align-items: start;*/
+/*  width: 50%;*/
+/*}*/
 
-.corretor-section p {
-  text-align: start;
-  font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
-  font-family: "Ubuntu", sans-serif;
-  line-height: 1.6;
-  color: #133855;
-  margin: auto;
-}
+/*.corretor-section p {*/
+/*  text-align: start;*/
+/*  font-size: 1.2rem; !* Tamanho da fonte do parágrafo *!*/
+/*  font-family: "Ubuntu", sans-serif;*/
+/*  line-height: 1.6;*/
+/*  color: #133855;*/
+/*  margin: auto;*/
+/*}*/
 
-.creci-tti {
-  font-size: 70px; /* Tamanho da fonte do título */
-  color: #133855;
-  margin: 5px !important;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  line-height: 1;
-  text-shadow: 2px 1px 3px rgba(65, 65, 65, 0.81);
-}
-.corretor-section2 {
-  width: 50%;
-}
-.corretor-section2 p {
-  font-size: 17px;
-  font-family: "Ubuntu", sans-serif;
-  margin-top: 10px;
-  color: rgb(68, 68, 68);
-  line-height: 1;
-  font-weight: normal;
-  text-align: start;
-  width: 100%;
-}
-.saiba-mais-button {
-  padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
-  font-size: 18px; /* Ajuste o tamanho da fonte do botão conforme necessário */
-  background-color: #d15519; /* Cor de fundo do botão */
-  color: white; /* Cor do texto do botão */
-  text-decoration: none; /* Remova a decoração de texto para que pareça um botão */
-  border: none;
-  border-radius: 5px;
-  margin: 150px !important;
-  cursor: pointer;
-}
+/*.creci-tti {*/
+/*  font-size: 70px; !* Tamanho da fonte do título *!*/
+/*  color: #133855;*/
+/*  margin: 5px !important;*/
+/*  font-family: "Bebas Neue", sans-serif;*/
+/*  font-weight: bold;*/
+/*  text-transform: uppercase;*/
+/*  letter-spacing: 5px;*/
+/*  line-height: 1;*/
+/*  text-shadow: 2px 1px 3px rgba(65, 65, 65, 0.81);*/
+/*}*/
+/*.corretor-section2 {*/
+/*  width: 50%;*/
+/*}*/
+/*.corretor-section2 p {*/
+/*  font-size: 17px;*/
+/*  font-family: "Ubuntu", sans-serif;*/
+/*  margin-top: 10px;*/
+/*  color: rgb(68, 68, 68);*/
+/*  line-height: 1;*/
+/*  font-weight: normal;*/
+/*  text-align: start;*/
+/*  width: 100%;*/
+/*}*/
+/*.saiba-mais-button {*/
+/*  padding: 10px 20px; !* Ajuste o preenchimento conforme necessário *!*/
+/*  font-size: 18px; !* Ajuste o tamanho da fonte do botão conforme necessário *!*/
+/*  background-color: #d15519; !* Cor de fundo do botão *!*/
+/*  color: white; !* Cor do texto do botão *!*/
+/*  text-decoration: none; !* Remova a decoração de texto para que pareça um botão *!*/
+/*  border: none;*/
+/*  border-radius: 5px;*/
+/*  margin: 150px !important;*/
+/*  cursor: pointer;*/
+/*}*/
 
-.aboutus-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 20px;
-  background: rgba(17, 17, 17, 0.6);
-  border-radius: 20px;
-  color: #e3e2e2;
-  box-shadow: 2px 2px 15px #082238;
-  position: fixed;
-  right: 1vh;
-  top: 20vh;
-  min-width: 200px;
-  max-width: 300px;
-  z-index: 10000;
-}
+/*.aboutus-section {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: center;*/
+/*  padding: 20px;*/
+/*  background: rgba(17, 17, 17, 0.6);*/
+/*  border-radius: 20px;*/
+/*  color: #e3e2e2;*/
+/*  box-shadow: 2px 2px 15px #082238;*/
+/*  position: fixed;*/
+/*  right: 1vh;*/
+/*  top: 20vh;*/
+/*  min-width: 200px;*/
+/*  max-width: 300px;*/
+/*  z-index: 10000;*/
+/*}*/
 
-.aboutus-section h2 {
-  margin: 0px;
-  margin-top: 10px;
-  font-size: 1.9rem;
-  color: #ffffff;
-  font-weight: bold;
-}
+/*.aboutus-section h2 {*/
+/*  margin: 0px;*/
+/*  margin-top: 10px;*/
+/*  font-size: 1.9rem;*/
+/*  color: #ffffff;*/
+/*  font-weight: bold;*/
+/*}*/
 
-.aboutus-section p {
-  color: #ffffff;
-  font-size: 1.3rem;
-  line-height: 0.9;
-  text-align: center;
-  font-weight: normal;
-}
+/*.aboutus-section p {*/
+/*  color: #ffffff;*/
+/*  font-size: 1.3rem;*/
+/*  line-height: 0.9;*/
+/*  text-align: center;*/
+/*  font-weight: normal;*/
+/*}*/
 
-.aboutus-text h1 {
-  margin: 5px;
-  font-weight: bold;
-  color: #d15519;
-  text-shadow: 2px -2px 1px #18181d, 0px 0px 10px rgba(24, 24, 29, 0.91),
-    0 10px 25px rgba(24, 24, 29, 0.59);
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 45px;
-  letter-spacing: 3px;
-  margin-top: 5px;
-}
-.aboutus-text li {
-  list-style: square;
-  text-align: start;
-  color: #ffffff;
-  font-size: 1.2rem;
-  line-height: 1;
-  font-weight: normal;
-}
+/*.aboutus-text h1 {*/
+/*  margin: 5px;*/
+/*  font-weight: bold;*/
+/*  color: #d15519;*/
+/*  text-shadow: 2px -2px 1px #18181d, 0px 0px 10px rgba(24, 24, 29, 0.91),*/
+/*    0 10px 25px rgba(24, 24, 29, 0.59);*/
+/*  font-family: "Bebas Neue", sans-serif;*/
+/*  font-size: 45px;*/
+/*  letter-spacing: 3px;*/
+/*  margin-top: 5px;*/
+/*}*/
+/*.aboutus-text li {*/
+/*  list-style: square;*/
+/*  text-align: start;*/
+/*  color: #ffffff;*/
+/*  font-size: 1.2rem;*/
+/*  line-height: 1;*/
+/*  font-weight: normal;*/
+/*}*/
 
 .syllabus-section-content {
   display: flex;
@@ -677,30 +677,7 @@ html {
 .vantagens-curso p {
   color: #ebe1e2;
 }
-.map-sec {
-  background-color: #133855;
-  color: #e3e2e2;
-  height: 100%;
-  padding: 20px;
-}
-.map-sec h1 {
-  text-align: center;
-  color: #ebe1e2;
-  font-size: 50px;
-  margin: 0;
-  padding-top: 20px;
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 10px;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-.polo-item {
-  color: #131313;
-}
-.map-sec p {
-  text-align: left;
-  max-width: 70%;
-  margin-left: 170px;
-}
+
 /* TAMANHO MEDIANO*/
 @media only screen and (min-width: 801px) and (max-width: 1440px) {
   

@@ -78,7 +78,8 @@
     padding: 15px;
 }
 
-.mobile-navigation {
+.mobile-navigation,
+.navigation-mobile {
     display: none;
 }
 
