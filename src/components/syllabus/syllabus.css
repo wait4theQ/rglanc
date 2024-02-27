@@ -1,0 +1,130 @@
+.syllabus-section-content {
+    display: flex;
+    flex-direction: row;
+    background: #133855;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
+.syllabus-section-content h5 {
+    font-size: 25px;
+    color: #d15519;
+    text-shadow: 1px 1px 1px #000000;
+    height: 50px;
+    width: 500px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    text-wrap: normal;
+}
+
+.module ul {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: #131313;
+    background: #e3e2e2;
+    /*border: 3px solid #d15519;*/
+    box-shadow: 3px 3px 2px rgba(19, 19, 19, 0.7);
+    /*border-radius: 10px;*/
+    border: 3px outset #131313;
+    width: 85%;
+    height: 70%;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    align-self: center;
+    flex: 1;
+}
+
+.syllabus-section {
+    background: #133855 !important;
+    padding: 50px;
+    color: #e3e2e2;
+    height:100vh;
+}
+
+.syllabus-section h1 {
+    background: #133855 !important;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #e3e2e2;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.module h5 {
+    margin: 0;
+    font-size: 28px;
+    height: fit-content;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    background: #133855;
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+
+.syllabus-section-content li {
+    list-style: none;
+    font-size: 17px;
+    padding: 5px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.course-numbers {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 40px;
+}
+.course-numbers h5 {
+    font-size: 25px;
+    height: 10px;
+    text-align: center;
+    color: #e3e2e2;
+    width: 100%;
+}
+
+.course-numbers p {
+    font-size: 15px;
+    width: 60%;
+    margin: auto;
+    color: #adadad;
+}
+.course-numbers ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #adadad;
+    margin: auto;
+    padding: 30px;
+}
+.course-numbers li b {
+    color: #e3e2e2;
+    text-shadow: 2px 2px 0 #18181d;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.course-numbers li {
+    /*border: 1px solid #e3e2e2;*/
+    border-radius: 50px;
+    background: rgba(24, 24, 29, 0.76);
+    margin: 5px;
+    box-shadow: 2px 2px 2px 2px #18181d;
+    /*height:30px;*/
+    padding: 15px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 801px) and (max-width: 1480px) {
+    .syllabus-section-content {
+        max-width:100%;
+    }
+}

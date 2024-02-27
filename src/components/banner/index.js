@@ -43,12 +43,12 @@ function Banner() {
       <div className="banner" id="home">
         <div className="banner-content">
           <div className="corretor-section">
-            <h2>Conheça o curso:</h2>
-            <h1 className="creci-tti">Corretor Creci TTI</h1>
             <h2>
               Uma parceria autorizada de vendas do Instituto Monitor. Matrículas
               abertas!
             </h2>
+            <h1 className="creci-tti">Corretor Creci TTI</h1>
+
             {/*<a href="/pagina-de-matricula" className="matricule-se-button">*/}
             {/*  Matricule-se*/}
             {/*</a>*/}
@@ -59,17 +59,14 @@ function Banner() {
             <p>
               ✔️ Aulas 100% online e provas presenciais no Polo de sua cidade
             </p>
-            <br />
+            <br/>
 
             {/*<a href="/saiba-mais" className="saiba-mais-button">*/}
             {/*		Saiba mais*/}
             {/*</a>*/}
             <button
-              className="matricule-se-button"
-              onClick={() =>
-                (window.location.href =
-                  "https://www.alboompay.com/RitaLeite/button/65306fc07b503d0026e77449")
-              }
+                className="matricule-se-button"
+                onClick={() => (window.location.href = "https://www.alboompay.com/RitaLeite/button/65306fc07b503d0026e77449")}
             >
               Inscreva-se
             </button>
@@ -86,8 +83,7 @@ function Banner() {
         </div>
       </div>
 
-    </div>
-  );
+    </div>);
 }
 
 export default Banner;
