@@ -17,12 +17,6 @@ import avatar1 from "./img/avatar1.png";
 import avatar2 from "./img/avatar2.png";
 import avatar3 from "./img/avatar3.png";
 import avatar4 from "./img/avatar4.png";
-import requirements from "./img/requirements.png";
-import demanda from "./img/demanda.png";
-import time from "./img/time.png";
-import money from "./img/money.png";
-import carreira from "./img/carreira.png";
-import Polos from "./polos.js";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
