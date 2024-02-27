@@ -86,6 +86,7 @@
 @media (min-width: 801px) and (max-width: 1480px) {
     .App-header {
         position: fixed;
+
     }
 
     .logos-container {
@@ -130,7 +131,7 @@
     }
 
     .navigation-mobile {
-        background-color: #131313;
+        background-color: #133855;
         z-index: 999999;
         list-style: none;
         display: flex;
@@ -170,6 +171,7 @@
         position: fixed;
         margin:0;
         padding: 0;
+        height: 60px;
     }
 
     .logos-container {
@@ -184,12 +186,13 @@
 
     .logo1 {
         height: 55px;
-        margin-top: 45px;
-        margin-left: -45px;
+        margin-top: 40px;
+        margin-left: -30px;
     }
 
     .logo2 {
-        height: 40px;
+        height: 50px;
+        margin-left: -5px;
     }
 
     .navigation {
@@ -210,7 +213,7 @@
   }
 
   .navigation-mobile {
-    background-color: #131313;
+    background-color: #133855;
     z-index: 999999;
     list-style: none;
     display: flex;

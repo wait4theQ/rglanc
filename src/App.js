@@ -70,8 +70,8 @@ function App() {
     <Navbar/>
     <Banner/>
     <Syllabus/>
-    <Perks/>
     <Requirements/>
+    <Perks/>
 
         <div className="map-sec" id="unidades">
           <h1>Unidades</h1>

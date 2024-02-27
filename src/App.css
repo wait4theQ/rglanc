@@ -379,7 +379,7 @@ html {
 
 .CreatedBy a {
   color: #fbfaff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .CreatedBy a:hover {

@@ -36,7 +36,7 @@ function Footer() {
             </div>
             <div className="border"></div>
             <div className="CreatedBy">
-            Desenvolvido por:  <a href="/public" target="_blank"></a>
+            Desenvolvido por:  <a href="http://guigo.tech" target="_blank">GuiGo Solutions</a>
             </div>
 
         </footer>);
