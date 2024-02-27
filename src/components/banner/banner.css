@@ -154,11 +154,11 @@
   width: 100%;
 }
 .saiba-mais-button {
-  padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
-  font-size: 18px; /* Ajuste o tamanho da fonte do botão conforme necessário */
-  background-color: #d15519; /* Cor de fundo do botão */
-  color: white; /* Cor do texto do botão */
-  text-decoration: none; /* Remova a decoração de texto para que pareça um botão */
+  padding: 10px 20px; 
+  font-size: 18px; 
+  background-color: #d15519;
+  color: white; 
+  text-decoration: none; 
   border: none;
   border-radius: 5px;
   margin: 150px !important;
