@@ -59,7 +59,6 @@ function Perks() {
 						</div>
 				</div>
 				<Testimonials></Testimonials>
-
 		</div>);
 }
 

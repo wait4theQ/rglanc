@@ -142,7 +142,7 @@
         align-items: center;
         justify-content: space-evenly;
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 10px;
     }
 
@@ -168,6 +168,8 @@
 @media only screen and (max-width: 800px) {
     .App-header {
         position: fixed;
+        margin:0;
+        padding: 0;
     }
 
     .logos-container {
@@ -183,6 +185,7 @@
     .logo1 {
         height: 55px;
         margin-top: 45px;
+        margin-left: -45px;
     }
 
     .logo2 {
@@ -219,7 +222,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 0;
     padding:30px 0px;
   }

@@ -68,12 +68,11 @@ function App() {
 
   return (<div className="App">
     <Navbar/>
-        <Banner></Banner>
+    <Banner/>
+    <Syllabus/>
+    <Perks/>
+    <Requirements/>
 
-    <Syllabus></Syllabus>
-        <Perks></Perks>
-
-        <Requirements></Requirements>
         <div className="map-sec" id="unidades">
           <h1>Unidades</h1>
           <p>

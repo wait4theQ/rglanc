@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 .syllabus-section-content {
     display: flex;
     flex-direction: row;
@@ -42,9 +45,8 @@
     background: #133855 !important;
     padding: 50px;
     color: #e3e2e2;
-    height:100vh;
+    /*min-height: 100vh;*/
 }
-
 .syllabus-section h1 {
     background: #133855 !important;
     padding-top: 20px;
@@ -57,7 +59,6 @@
 }
 
 .module h5 {
-    margin: 0;
     font-size: 28px;
     height: fit-content;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -107,7 +108,7 @@
     text-shadow: 2px 2px 0 #18181d;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .course-numbers li {
@@ -123,8 +124,79 @@
     align-items: center;
 }
 
-@media (min-width: 801px) and (max-width: 1480px) {
+@media screen and (min-width: 801px) and (max-width: 1480px) {
     .syllabus-section-content {
-        max-width:100%;
+        max-width:90%;
+    }
+    .syllabus-section {
+        background: #133855 !important;
+        padding: 50px;
+        color: #e3e2e2;
+    }
+    .Syllabus {
+        height: 100%;
+    }
+    .course-numbers {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    /*.syllabus-section-content {*/
+    /*    max-width:90%;*/
+    /*}*/
+    .syllabus-section {
+        background: #133855 !important;
+        padding: 50px;
+        color: #e3e2e2;
+    }
+    .Syllabus {
+        height: 100%;
+    }
+    .course-numbers ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #adadad;
+        margin: auto;
+        padding: 10px;
+    }
+    .course-numbers {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .course-numbers li {
+        /*border: 1px solid #e3e2e2;*/
+        border-radius: 50px;
+        background: rgba(24, 24, 29, 0.76);
+        margin: 5px;
+        box-shadow: 2px 2px 2px 2px #18181d;
+        /*height:30px;*/
+        padding: 5px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .module {
+        width:100%;
+    }
+    .module h5{
+        width:100%;
+        padding-top:20px;
+    }
+    .syllabus-section h1 {
+        background: #133855 !important;
+        padding-top: 0;
+        margin:0;
+        color: #e3e2e2;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 50px;
+        letter-spacing: 10px;
     }
 }
