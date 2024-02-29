@@ -104,10 +104,15 @@ margin-left: 0 ;
 @media only screen and (max-width: 800px) {
     .map-sec p {
         width:100%;
-        margin:20px;
+        margin:auto;
+        text-align: start;
+        padding:12px;
+        font-size:12px;
     }
     .map-sec  {
         width:100%;
+        align-content: center;
+        align-items: center;
     }
     .polos-container {
         max-width:100%;
