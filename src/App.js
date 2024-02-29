@@ -70,7 +70,6 @@ function App() {
   return (<div className="App">
 
     <Navbar/>
-    <Modal/>
     <Banner/>
     <Syllabus/>
     <Requirements/>

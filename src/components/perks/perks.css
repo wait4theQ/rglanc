@@ -93,3 +93,14 @@
         width: 200px;
     }
 }
+
+@media  (max-width: 800px) {
+    .vantagens-section {
+        padding-bottom:50px;
+    }
+    .vantagens-content {
+        padding: 10px;
+        border: none;
+        margin-bottom: 0;
+    }
+}

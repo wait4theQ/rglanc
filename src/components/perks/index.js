@@ -10,6 +10,7 @@ import carreira from "../../img/carreira.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Testimonials from "../testimonials";
+import Modal from "../modal";
 
 function Perks() {
 
@@ -56,6 +57,7 @@ function Perks() {
 												sucesso no segmento imobiliário.
 										</p>
 								</div>
+								<Modal/>
 						</div>
 				</div>
 				<Testimonials></Testimonials>

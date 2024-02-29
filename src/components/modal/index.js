@@ -24,11 +24,12 @@ function Modal() {
 										{/*<li>Direito ao CRECI</li>*/}
 
 										<button
-												className="modal-text-apply"
+												className="matricule-se-button"
 												onClick={() => (window.location.href = "https://www.alboompay.com/RitaLeite/button/65306fc07b503d0026e77449")}
 										>
 												Inscreva-se!
 										</button>
+										<br/>
 										<p>*(Oferta exclusiva RG Lançamentos)</p>
 								</div>
 						</div>);

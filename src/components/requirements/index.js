@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "leaflet/dist/leaflet.css";
 import "./requirements.css";
 
@@ -7,6 +7,7 @@ import requirements from "../../img/requirements.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Modal from "../modal";
 
 function Requirements() {
 
@@ -71,6 +72,7 @@ function Requirements() {
 												</ul>
 										</div>
 								</div>
+								<Modal/>
 						</div>
 				</div>);
 }

@@ -7,6 +7,7 @@ import "./syllabus.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Modal from "../modal";
 
 function Syllabus() {
 
@@ -51,6 +52,7 @@ function Syllabus() {
 														<b>Total de avaliações:</b> 10 Provas Presenciais
 												</li>
 										</ul>
+										<Modal/>
 										<p>
 												"Após a confirmação de pagamento você receberá um e-mail do
 												instituto monitor para realizar a matrícula, escolher o polo e

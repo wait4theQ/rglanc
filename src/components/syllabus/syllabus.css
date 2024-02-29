@@ -51,7 +51,7 @@
 .syllabus-section h1 {
     background: #133855 !important;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
     color: #e3e2e2;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     font-family: "Bebas Neue", sans-serif;
@@ -92,7 +92,7 @@
 
 .course-numbers p {
     font-size: 15px;
-    width: 60%;
+    width: 90%;
     margin: auto;
     color: #adadad;
 }
