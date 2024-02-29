@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { isMobile } from "react-device-detect";
 import Navbar from './components/navbar/index.js'
 import Banner from "./components/banner/index.js";
 import Location from "./components/location/index.js";
@@ -65,7 +66,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={`App ${isMobile ? 'mobile-view' : ''}`}>
       <Helmet>
         <meta
           name="viewport"
