@@ -196,6 +196,8 @@
   line-height: 0.9;
   text-align: center;
   font-weight: normal;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .aboutus-text h1 {
@@ -216,6 +218,10 @@
   font-size: 1.2rem;
   line-height: 1;
   font-weight: normal;
+  
+}
+.aboutus-text h3 {
+  margin-top: 20px;
 }
 
 /* TAMANHO MEDIANO */
