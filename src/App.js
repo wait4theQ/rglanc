@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState} from "react";
 import Slider from "react-slick";
 //import { MapContainer, TileLayer,  LayerGroup, Marker, Popup, } from 'react-leaflet';
 //import L from 'leaflet';
@@ -22,20 +22,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function App() {
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  
   const names = [
     "Felipe Cordeiro",
     "Isabela Mendes",
@@ -80,7 +66,7 @@ function App() {
     autoplaySpeed: 4000,
   };
 
-  return (<div className={`App ${isMobileView ? 'mobile-view' : 'desktop-view'}`}>
+  return (<div className="App">
     <Navbar/>
     <Banner/>
     <Syllabus/>

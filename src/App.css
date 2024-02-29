@@ -3,14 +3,6 @@
 * {
   font-family: "Ubuntu", sans-serif;
 }
-.desktop-view {
-  /* Estilos para visualização em desktop */
-}
-
-.mobile-view {
-  /* Estilos para visualização em mobile (mesmos estilos que desktop) */
-  /* Você pode copiar e colar os estilos do modo desktop aqui */
-}
 
 .App {
   text-align: center;
