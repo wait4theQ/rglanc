@@ -3,6 +3,7 @@ import Slider from "react-slick";
 //import { MapContainer, TileLayer,  LayerGroup, Marker, Popup, } from 'react-leaflet';
 //import L from 'leaflet';
 import Navbar from './components/navbar/index.js'
+import Modal from './components/modal/index.js'
 import Banner from "./components/banner/index.js";
 import Location from "./components/location/index.js";
 import Syllabus from "./components/syllabus";
@@ -67,12 +68,13 @@ function App() {
   };
 
   return (<div className="App">
+
     <Navbar/>
+    <Modal/>
     <Banner/>
     <Syllabus/>
     <Requirements/>
     <Perks/>
-
         <div className="map-sec" id="unidades">
           <h1>Unidades</h1>
           <p>

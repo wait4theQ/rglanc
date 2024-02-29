@@ -1,11 +1,6 @@
 import React from "react";
-//import { MapContainer, TileLayer,  LayerGroup, Marker, Popup, } from 'react-leaflet';
-//import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import "../banner/banner.css";
-//import sobre from './img/avatar1.png';
-//import mark from './img/mark.png';
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
