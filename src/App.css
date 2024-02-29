@@ -9,9 +9,6 @@
 }
 html {
   scroll-behavior: smooth;
- }
- body.mobile-view {
-  /* Adicione estilos específicos para dispositivos móveis aqui, se necessário */
 }
 
 .App-logo {

@@ -1,6 +1,7 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { isMobile } from "react-device-detect";
+import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
+//import { MapContainer, TileLayer,  LayerGroup, Marker, Popup, } from 'react-leaflet';
+//import L from 'leaflet';
 import Navbar from './components/navbar/index.js'
 import Banner from "./components/banner/index.js";
 import Location from "./components/location/index.js";
@@ -21,6 +22,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function App() {
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  
   const names = [
     "Felipe Cordeiro",
     "Isabela Mendes",
@@ -65,49 +80,40 @@ function App() {
     autoplaySpeed: 4000,
   };
 
-  return (
-    <div className={`App ${isMobile ? 'mobile-view' : ''}`}>
-      <Helmet>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+  return (<div className={`App ${isMobileView ? 'mobile-view' : 'desktop-view'}`}>
+    <Navbar/>
+    <Banner/>
+    <Syllabus/>
+    <Requirements/>
+    <Perks/>
+
+        <div className="map-sec" id="unidades">
+          <h1>Unidades</h1>
+          <p>
+            Como instituição de educação a distância que quer acompanhar de perto
+            o desenvolvimento dos alunos, oferecemos a melhor estrutura e diversas
+            unidades para que você tenha mais opções nos seus estudos.
+          </p>
+          <p>
+            Confira abaixo o endereço de nossas Unidades e Polos da cidade de São
+            Paulo
+          </p>
+
+          <Location/>
+        </div>
+        <FloatingWhatsApp
+            phoneNumber="(11) 997075-3810"
+            accountName="Ana Rita corretora de lançamentos"
+            avatar={rita}
+            chatMessage="Olá, como posso ajudar?"
+            statusMessage="RG Lançamentos"
+            avatarStyle={{width: "50px", height: "50px"}}
+            allowClickAway="true"
+            buttonStyle={{position: "fixed", left: "20px", bottom: "30px"}}
+            chatboxStyle={{position: "fixed", left: "20px", bottom: "120px"}}
         />
-      </Helmet>
-
-      <Navbar />
-      <Banner />
-      <Syllabus />
-      <Requirements />
-      <Perks />
-
-      <div className="map-sec" id="unidades">
-        <h1>Unidades</h1>
-        <p>
-          Como instituição de educação a distância que quer acompanhar de perto
-          o desenvolvimento dos alunos, oferecemos a melhor estrutura e diversas
-          unidades para que você tenha mais opções nos seus estudos.
-        </p>
-        <p>
-          Confira abaixo o endereço de nossas Unidades e Polos da cidade de São
-          Paulo
-        </p>
-
-        <Location />
-      </div>
-      <FloatingWhatsApp
-        phoneNumber="(11) 997075-3810"
-        accountName="Ana Rita corretora de lançamentos"
-        avatar={rita}
-        chatMessage="Olá, como posso ajudar?"
-        statusMessage="RG Lançamentos"
-        avatarStyle={{ width: "50px", height: "50px" }}
-        allowClickAway="true"
-        buttonStyle={{ position: "fixed", left: "20px", bottom: "30px" }}
-        chatboxStyle={{ position: "fixed", left: "20px", bottom: "120px" }}
-      />
-      <Footer />
-    </div>
-  );
+        <Footer></Footer>
+      </div>);
 }
 
 export default App;
